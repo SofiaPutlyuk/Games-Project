@@ -1,0 +1,53 @@
+.guess-the-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &_title {
+    @extend %main-font;
+    color: $mainColor;
+  }
+  &_content {
+    display: flex;
+    width: 100%;
+    margin-top: 36px;
+    justify-content: space-between;
+    &--box {
+      display: flex;
+      margin-left: 257px;
+    }
+    &--imput {
+      width: 115px;
+      // height: 35px;
+      gap: 10px;
+      border-radius: 20px 0 0 20px;
+      background: $secondColor;
+      display: flex;
+      @extend %main-font;
+      font-size: 12px;
+      line-height: 14.63px;
+      border: 0;
+      box-shadow: 3px 3px 0px 0px #00000040;
+      color: #7e7e7e;
+      padding-left: 10px;
+    }
+    &--button {
+      width: 35px;
+      height: 35px;
+      gap: 10px;
+      border-radius: 0 20px 20px 0;
+      background-color: $mainColor;
+      border: 0;
+      box-shadow: 3px 3px 0px 0px #00000040;
+    }
+    &--search {
+      width: 15px;
+      height: 15px;
+    }
+    &--result {
+      @extend %main-font;
+      margin-top: 10px;
+      margin-right: 240px;
+    }
+  }
+}
