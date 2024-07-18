@@ -1,0 +1,66 @@
+.guess-the-number_content--result, .guess-the-number_content--imput, .guess-the-number_title {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+}
+
+.guess-the-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.guess-the-number_title {
+  color: black;
+}
+.guess-the-number_content {
+  display: flex;
+  width: 100%;
+  margin-top: 36px;
+  justify-content: space-between;
+}
+.guess-the-number_content--box {
+  display: flex;
+  margin-left: 257px;
+}
+.guess-the-number_content--imput {
+  width: 115px;
+  gap: 10px;
+  border-radius: 20px 0 0 20px;
+  background: #D7D7D7;
+  display: flex;
+  font-size: 12px;
+  line-height: 14.63px;
+  border: 0;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  color: #7e7e7e;
+  padding-left: 10px;
+}
+.guess-the-number_content--button {
+  width: 35px;
+  height: 35px;
+  gap: 10px;
+  border-radius: 0 20px 20px 0;
+  background-color: black;
+  border: 0;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.guess-the-number_content--search {
+  width: 15px;
+  height: 15px;
+}
+.guess-the-number_content--result {
+  margin-top: 10px;
+  margin-right: 240px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1090px;
+  margin: 0 auto;
+}
