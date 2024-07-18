@@ -1,0 +1,42 @@
+.largest-number_content--text, .largest-number_title {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+}
+
+.largest-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.largest-number_title {
+  color: black;
+}
+.largest-number_content {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 36px;
+}
+.largest-number_content--input {
+  width: 135px;
+  height: 35px;
+  text-align: center;
+  background-color: #D7D7D7;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.largest-number_content--text {
+  font-size: 12px;
+  line-height: 14.63px;
+  width: 252px;
+  height: 15px;
+  color: black;
+  margin: 36px auto;
+}
