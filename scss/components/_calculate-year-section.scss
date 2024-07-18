@@ -1,0 +1,46 @@
+.text__check-year {
+    @extend %main-font;
+}
+
+.input-year {
+    width: 215px;
+    height: 35px;
+    box-shadow: 3px 3px 0px 0px #00000040;
+    background: #D7D7D7;
+    border-radius: 20px;
+    border: none;
+    
+
+}
+
+.container-check-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-year {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 40px;
+}
+.result-input {
+    @extend %main-font;
+    font-size: 12px;
+    line-height: 14.63px;
+&__green {
+color: #039900;
+}
+&__red {
+    color: #990000;
+
+}
+}
+.box-space-year {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}

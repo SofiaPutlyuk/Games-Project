@@ -1,0 +1,48 @@
+.result-input, .text__check-year {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+}
+
+.input-year {
+  width: 215px;
+  height: 35px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  background: #D7D7D7;
+  border-radius: 20px;
+  border: none;
+}
+
+.container-check-year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-year {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 40px;
+}
+
+.result-input {
+  font-size: 12px;
+  line-height: 14.63px;
+}
+.result-input__green {
+  color: #039900;
+}
+.result-input__red {
+  color: #990000;
+}
+
+.box-space-year {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
