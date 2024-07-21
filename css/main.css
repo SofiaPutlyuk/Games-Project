@@ -5,7 +5,12 @@
   align-items: center;
   width: 1440px;
   height: 80px;
-  position: relative;
+}
+.container-header__list {
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
 }
 
 #buttonArrow {
@@ -17,13 +22,12 @@
 .style-arrow {
   width: 160px;
   height: 105px;
-  z-index: 1000;
   position: absolute;
-  top: 100%;
-  left: 0;
-  border-width: 0px, 1px, 0px, 1px;
-  border-style: solid;
-  border-color: #000000;
+  transform: translate(30px, 10px);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
 }
 
 /*Перимекач */
@@ -33,6 +37,7 @@
   border: none;
   background: #7A7A7A;
   border-radius: 11px;
+  transform: translate(60px);
 }
 
 #imgSun {
@@ -41,8 +46,30 @@
   transform: translate(-10px);
 }
 
-.container-div {
-  border: 0px, 1px, 0px, 1px;
+/*Блок*/
+.text-div:hover {
+  background: #F1F1F1;
+}
+
+.text-div {
+  height: 35px;
+  align-items: center;
+  display: flex;
+  width: 160px;
+  justify-content: center;
+  border-width: 0px 1px 0px 1px;
+  border-style: solid;
+  border-color: #000000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+}
+
+.text-div:last-child {
+  border-radius: 0px 0px 20px 20px;
+  border-width: 0px 1px 1px 1px;
 }
 
 .backdrop {
@@ -78,13 +105,18 @@
   font-weight: 400;
   line-height: 14.52px;
   text-align: center;
-  margin-top: 40px;
+  margin: auto;
+  width: 392px;
 }
 
-.container {
+.container-img {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
+}
+.container-img__new {
+  gap: 0px;
+  display: flex;
 }
 
 #inputName {
@@ -128,7 +160,7 @@
   left: 92%;
   border: none;
   background: none;
-  top: 10px;
+  top: 20px;
 }
 
 .style-new {
@@ -140,11 +172,22 @@
 }
 
 .text-subscribe {
-  margin-top: 20px;
+  margin-top: 35px;
   font-family: "Inter";
   font-size: 20px;
   font-weight: 400;
   line-height: 24.2px;
   text-align: center;
-  margin-bottom: 25%;
+}
+.text-subscribe__label {
+  margin: auto;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: center;
+}
+
+.space-container {
+  margin-top: 40px;
 }

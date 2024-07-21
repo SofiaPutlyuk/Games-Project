@@ -1,6 +1,5 @@
 /*Блок */
 const searchArrowbutton = document.getElementById('buttonArrow')
-
 searchArrowbutton.addEventListener('click', function () {
     const searchDiv = document.getElementById('divArrow')
     if (searchDiv) {
@@ -10,9 +9,9 @@ searchArrowbutton.addEventListener('click', function () {
         createDiv.id = 'divArrow'
         createDiv.classList.add('container-div')
         createDiv.innerHTML = `
-<p>Числовий</p>
-<p>Ігровий</p>
-<p>Ознайомчий</p>
+<div class="text-div">Числовий</div>
+<div class="text-div">Ігровий</div>
+<div class="text-div">Ознайомчий</div>
 
 `
         createDiv.classList.add('style-arrow')
@@ -23,39 +22,62 @@ searchArrowbutton.addEventListener('click', function () {
 /*Іконка */
 const searchIconswitch = document.getElementById('imgSun')
 const searchButtonswitch = document.getElementById('button-switch')
-console.log(searchIconswitch)
-searchIconswitch.addEventListener('click', function () {
-    searchIconswitch.style.transform = 'translate(10px)'
-    searchIconswitch.innerHTML = `
-    <img src ="Ellipse 7 (1).png" alt='icon-moon' id="imgSun"/>
-    `
-    document.body.style.background = 'black'
-    searchButtonswitch.appendChild(searchIconswitch)
+const imgSun = "button-sun.png"
+const imgMoon = "button-moon.png"
+const currentTransform = 'translate(-10px)'
+const changeTransform = 'translate(10px)'
+const colorBodycurrent = 'white'
+const colorBodychange = 'black'
+let toggle = false;
+searchIconswitch.addEventListener('click',function(){
+ if(toggle){
+  searchIconswitch.src = imgSun
+  document.body.style.background = 'white';
+  searchIconswitch.style.transform = currentTransform
+  searchIconswitch.style.background = colorBodycurrent
+ 
+ } else {
+    searchIconswitch.src = imgMoon
+    document.body.style.background = 'black';
+    searchIconswitch.style.transform = changeTransform
+    searchIconswitch.style.background = colorBodychange
+ }
+ toggle = !toggle
 })
- /*Модальне вікно */
+
+/*Модальне вікно */
 const searchModal = document.querySelector('.modal-content');
 const searchButtonSave = document.getElementById('buttonSave');
 const searchBackdrop = document.querySelector('.backdrop');
 const searchInputname = document.getElementById('inputName');
 const searchliname = document.querySelector('li:last-child');
-searchButtonSave.addEventListener('click', function() {
-    const resultInputvalue = searchInputname.value;
+const buttonClose = document.getElementById('buttonClose');
+function closeButton(){
+    const buttonClose = document.getElementById('buttonClose');
+    if(buttonClose){
+        buttonClose.addEventListener('click',function(){
+            searchModal.style.display = "none"
+            searchBackdrop.style.display = "none"
+            
+        })
+    }
+}
+searchButtonSave.addEventListener('click',function(){
     searchModal.innerHTML = `
-        <button id="buttonClose" data-action="close">
-            <img src="Vector 234 (1).png" alt="button-close" />
-        </button>
-        <img src="Screenshot (758)-1.png" alt="photo"/>
-        <p class="text-subscribe">Дякую за підписку!</p>
-        <img src="Screenshot (758)-2.png" alt="photo2"/>
-    `;
+    <div class="container-img__new">
+    <button id="buttonClose">
+    <img src="button-close.png" alt="button-close" />
+</button>
+<img src="sword-puzzle.png" alt="photo"/>
+<p class="text-subscribe">Дякую за підписку!</p>
+<img src="game-console.png" alt="photo2"/>
+
+    </div>
     
+    `
+    const resultInputvalue = searchInputname.value;
     searchModal.classList.add('style-new');
     searchliname.textContent = `Вітаємо, ${resultInputvalue}!`;
-    const buttonClose = document.getElementById('buttonClose');
-    if (buttonClose) {
-        buttonClose.addEventListener('click', function() {
-            searchModal.style.display = "none";
-            searchBackdrop.style.opacity = 0;
-        });
-    }
-});
+    closeButton()
+})
+closeButton()
