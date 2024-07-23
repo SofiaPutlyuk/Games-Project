@@ -26,21 +26,21 @@ const imgSun = "button-sun.png"
 const imgMoon = "button-moon.png"
 const currentTransform = 'translate(-10px)'
 const changeTransform = 'translate(10px)'
-const colorBodycurrent = 'white'
-const colorBodychange = 'black'
+const colorBodyCurrent = 'white'
+const colorBodyChange = 'black'
 let toggle = false;
 searchIconswitch.addEventListener('click',function(){
  if(toggle){
   searchIconswitch.src = imgSun
-  document.body.style.background = 'white';
+  document.body.style.background = colorBodyCurrent
   searchIconswitch.style.transform = currentTransform
-  searchIconswitch.style.background = colorBodycurrent
+  searchIconswitch.style.background = colorBodyCurrent
  
  } else {
     searchIconswitch.src = imgMoon
-    document.body.style.background = 'black';
+    document.body.style.background = colorBodyChange;
     searchIconswitch.style.transform = changeTransform
-    searchIconswitch.style.background = colorBodychange
+    searchIconswitch.style.background = colorBodyChange
  }
  toggle = !toggle
 })

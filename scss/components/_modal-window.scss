@@ -54,7 +54,7 @@
     border-radius: 20px;
     border: none;
     background: #D7D7D7;
-
+    padding-left: 10px;
 }
 
 #buttonSave {
@@ -68,7 +68,7 @@
     font-weight: 400;
     line-height: 14.63px;
     color: #FFFFFF;
-
+    border: none;
 }
 
 .form-name {
@@ -110,17 +110,15 @@
     line-height: 24.2px;
     text-align: center;
 
-    &__label {
-        margin: auto;
-        font-family: 'Inter';
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 14.52px;
-        text-align: center;
-
-    }
 }
-
+.text-label {
+    margin: auto;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+}
 .space-container {
     margin-top: 40px;
 }
