@@ -1,8 +1,8 @@
-
-const searchInputyear = document.getElementById('h');
-const searchButtonyear = document.querySelector('.button-year');
-searchButtonyear.addEventListener('click', function() {
-const searchValueyear = parseInt(searchInputyear.value, 10);
+const searchInputyear = document.getElementById('yearInput');
+const searchicon = document.getElementById('icon')
+console.log(searchicon)
+searchicon.addEventListener('click',function(){
+    const searchValueyear = parseInt(searchInputyear.value, 10);
 const existingMessage = document.getElementById('yearCheck')
     if (existingMessage) {
         existingMessage.remove();
@@ -20,4 +20,4 @@ if ((searchValueyear % 4 === 0 && searchValueyear % 100 !== 0) || (searchValueye
         messageYear.classList.add('result-input__red')
         document.querySelector('.container-check-year').appendChild(messageYear);
     }
-});
+})

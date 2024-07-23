@@ -6,6 +6,13 @@
   text-align: center;
 }
 
+.box-space {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
 .input-year {
   width: 215px;
   height: 35px;
@@ -16,23 +23,20 @@
 }
 
 .container-check-year {
-  display: flex;
-  justify-content: center;
+  display: grid;
   align-items: center;
+  width: 578px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .button-year {
-  background: none;
   border: none;
-  display: flex;
-  align-items: center;
-  position: relative;
-  right: 40px;
+  background: none;
 }
 
 .result-input {
   font-size: 12px;
-  line-height: 14.63px;
+  line-height: 15px;
 }
 .result-input__green {
   color: #039900;
@@ -41,8 +45,10 @@
   color: #990000;
 }
 
-.box-space-year {
+.box-input {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+}
+
+#icon {
+  transform: translate(-35px);
 }
