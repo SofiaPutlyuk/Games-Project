@@ -1,0 +1,75 @@
+.sctVSscVSpa__title {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+}
+
+.sctVSscVSpa {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sctVSscVSpa__answer {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  font-style: italic;
+  color: #D7D7D7;
+  margin-top: 15px;
+}
+.sctVSscVSpa__bth {
+  width: 160px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+  background-color: black;
+  border-radius: 20px;
+  border: 0;
+  margin-top: 36px;
+}
+.sctVSscVSpa__title {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.sctVSscVSpa__box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sctVSscVSpa__box_bth {
+  width: 256px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 105px;
+  margin-left: 220px;
+}
+.sctVSscVSpa__box_bth--vs {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border-color: black;
+  background-color: black;
+}
+.sctVSscVSpa__box_scoreboard {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.sctVSscVSpa__box_scoreboard--txt {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.sctVSscVSpa__box_scoreboard--txt-score::after {
+  content: "0";
+}
