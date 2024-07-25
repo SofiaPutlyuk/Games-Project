@@ -1,8 +1,9 @@
 body {
-    background-image: url('C:/Users/Owner/OneDrive/Документи/GitHub/Games-Project/scss/src/main-games.png');
+    background-image: url('./src/main-games.png');
     background-repeat: no-repeat;
     background-color: $lightGreyColor ;
     background-size: cover;
+
 }
 
 .container {
