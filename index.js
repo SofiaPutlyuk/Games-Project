@@ -1,23 +1,23 @@
-const searchInputyear = document.getElementById('yearInput');
+/*Калькулятор року */
+const searchInputYear = document.getElementById('yearInput');
 const searchicon = document.getElementById('icon')
-console.log(searchicon)
-searchicon.addEventListener('click',function(){
-    const searchValueyear = parseInt(searchInputyear.value, 10);
-const existingMessage = document.getElementById('yearCheck')
+searchicon.addEventListener('click', function () {
+    const searchValueYear = parseInt(searchInputYear.value, 10);
+    const existingMessage = document.getElementById('yearCheck')
     if (existingMessage) {
         existingMessage.remove();
     }
-if ((searchValueyear % 4 === 0 && searchValueyear % 100 !== 0) || (searchValueyear % 400 === 0)) {
+    if ((searchValueYear % 4 === 0 && searchValueYear % 100 !== 0) || (searchValueYear % 400 === 0)) {
         const messageYear = document.createElement('p');
         messageYear.textContent = 'Ви народилися у високосний рік!';
         messageYear.id = "yearCheck"
         messageYear.classList.add('result-input__green')
-        document.querySelector('.container-check-year').appendChild(messageYear);
+        document.querySelector('.box-input').appendChild(messageYear);
     } else {
         const messageYear = document.createElement('p');
         messageYear.textContent = 'Ви народилися не у високосний рік!';
         messageYear.id = "yearCheck"
         messageYear.classList.add('result-input__red')
-        document.querySelector('.container-check-year').appendChild(messageYear);
+        document.querySelector('.box-input').appendChild(messageYear);
     }
 })
