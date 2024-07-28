@@ -7,10 +7,11 @@ input {
 
 .footer-container {
     width: 1440px;
-    padding: 20px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #fff;
 }
 
 .footer-text {
