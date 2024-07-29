@@ -1,7 +1,7 @@
 .container {
     width: 1440px;
     margin: auto;
-    background-color: #f5f5f5;
+    background-color: $lightGreyColor;
     margin-top: 80px;
     background-image: url('C:/Users/Owner/OneDrive/Документи/GitHub/Games-Project/scss/src/main-games.png');
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 .main-content {
     width: 1090px;
     height: 3202px;
-    background-color: #fff;
+    background-color: $whiteColor;
     margin: auto;
 }
 
