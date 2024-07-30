@@ -1,0 +1,22 @@
+.title-dinosaur-google {
+    @extend %main-font;
+    
+}
+
+.container-google-dinosaur {
+    width:720px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+#dinosaur {
+    position: relative;
+    left: 250%;
+    top: -10px;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    transition: transform 0.2s ease;
+    transform-origin: bottom;
+}
