@@ -58,17 +58,22 @@ body {
 .our-team__carousel_indicator {
   margin-top: 10px;
   font-size: 16px;
+  display: flex;
 }
 .our-team__carousel_container {
   display: flex;
   overflow: hidden;
   width: 80%;
 }
+.our-team__carousel_inner {
+  flex-wrap: nowrap;
+  display: flex;
+}
 .our-team__carousel_card {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-width: 100%;
   transition: transform 0.5s ease-in-out;
 }
@@ -91,4 +96,18 @@ body {
   background-color: transparent;
   border: none;
   color: black;
+}
+
+.indicator-dot {
+  width: 15px;
+  height: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: darkgray;
+  transition: background-color 0.3s;
+}
+
+.indicator-dot.active {
+  width: 25px;
+  background-color: gray;
 }
