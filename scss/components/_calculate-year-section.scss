@@ -1,7 +1,3 @@
-.text-check-year {
-    @extend %main-font;
-}
-
 .input-year {
     width: 215px;
     height: 35px;
@@ -10,14 +6,17 @@
     border-radius: 20px;
     border: none;
     padding-left: 10px;
-    
+
 }
 
 .container-check-year {
-   display: grid;
-   gap:25px;
-   width: 578px;
-   margin: auto;
+    display: grid;
+    gap: 25px;
+    width: 578px;
+    margin: auto;
+&__text {
+    @extend %main-font;
+}
 }
 
 .button-year {
@@ -47,11 +46,12 @@
     justify-content: space-between;
 }
 
-  #icon {
+#icon {
     position: relative;
     right: 13%;
-    
-  }
-  .input-container {
+
+}
+
+.input-container {
     display: flex;
-  }
+}
