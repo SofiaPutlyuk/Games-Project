@@ -1,5 +1,5 @@
 .container {
-    width: 1440px;
+    width: 100%;
     margin: auto;
     background-color: $lightGreyColor;
     margin-top: 80px;
@@ -10,7 +10,6 @@
 
 .main-content {
     width: 1090px;
-    height: 3202px;
     background-color: $whiteColor;
     margin: auto;
 }
