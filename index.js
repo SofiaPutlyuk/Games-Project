@@ -26,6 +26,13 @@ searchInputButton.addEventListener('click', function () {
         searchFooterbutton.addEventListener('click', function () {
             createModal.remove()
             searchInputfooter.value = '';
+            
+        })
+        createModal.addEventListener('click',function(event){
+            if(event.target===createModal){
+                createModal.remove()
+                searchInputfooter.value = '';
+            }
         })
     }
 

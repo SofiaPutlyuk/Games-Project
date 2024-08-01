@@ -24,6 +24,22 @@
   padding-top: 116px;
 }
 
+.footer-text {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.text-thanks {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: center;
+}
+
 button,
 input {
   border: none;
@@ -38,15 +54,14 @@ input {
   align-items: center;
   justify-content: space-evenly;
   background-color: #fff;
+  margin: auto;
 }
 
 .footer-text {
   width: 207px;
-  font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
-  text-align: left;
 }
 
 .footer-input-container input,
@@ -60,7 +75,7 @@ input {
 }
 
 .footer-input-container button {
-  background: #000;
+  background: black;
   color: #fff;
   cursor: pointer;
   width: 107px;
@@ -102,11 +117,8 @@ input {
 }
 
 .text-thanks {
-  font-family: "Inter";
   font-size: 20px;
-  font-weight: 400;
   line-height: 24px;
-  text-align: center;
   margin-top: 50px;
 }
 
