@@ -23,7 +23,7 @@
   color: #D7D7D7;
   margin-top: 15px;
 }
-.sctVSscVSpa__bth {
+.sctVSscVSpa__btn {
   width: 160px;
   height: 35px;
   text-align: center;
@@ -38,19 +38,19 @@
   margin-bottom: 15px;
 }
 .sctVSscVSpa__box {
-  width: 100%;
+  width: 593px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.sctVSscVSpa__box_bth {
+.sctVSscVSpa__box_btn {
   width: 256px;
   display: flex;
   justify-content: space-between;
-  margin-right: 105px;
-  margin-left: 220px;
+  margin: auto;
 }
-.sctVSscVSpa__box_bth--vs {
+.sctVSscVSpa__box_btn--vs {
   width: 60px;
   height: 60px;
   border-radius: 20px;
@@ -58,6 +58,9 @@
   background-color: black;
 }
 .sctVSscVSpa__box_scoreboard {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 120px;
   display: flex;
   flex-direction: column;

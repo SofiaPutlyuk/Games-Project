@@ -16,7 +16,7 @@
         margin-top: 15px;
     }
 
-    &__bth{
+    &__btn{
         width: 160px;
         height: 35px;
         text-align: center;
@@ -35,17 +35,17 @@
     }
 
     &__box{
-        width: 100%;
+        width: 593px;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
 
-        &_bth{
+        &_btn{
             width: 256px;
             display: flex;
             justify-content: space-between;
-            margin-right: 105px;
-            margin-left: 220px;
+            margin: auto;
 
             &--vs{
                 width: 60px;
@@ -57,6 +57,9 @@
         }
 
         &_scoreboard{
+            position: absolute;
+            top: 0;
+            right: 0;
             width: 120px;
             display: flex;
             flex-direction: column;
