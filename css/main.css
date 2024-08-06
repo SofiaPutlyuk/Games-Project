@@ -85,6 +85,7 @@ input {
 .footer-input-container input {
   background: #D7D7D7;
   width: 204px;
+  padding-left: 10px;
 }
 
 .modal {

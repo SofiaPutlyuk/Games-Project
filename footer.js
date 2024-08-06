@@ -9,7 +9,7 @@ searchInputButton.addEventListener('click', function () {
         createModal.innerHTML = `
 <div class="modal">
 <button  id="footerButton">
-<img src="Vector 234 (1).png" alt="button-close"/>
+<img src="scss/src/close-icon.png" alt="button-close"/>
 </button>
     <div class="modal-content">
 
