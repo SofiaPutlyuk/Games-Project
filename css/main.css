@@ -37,7 +37,7 @@
   margin-right: 25px;
   margin-left: 25px;
 }
-.calculator__box_input {
+.calculator__box-input {
   width: 135px;
   min-height: 35px;
   text-align: center;
@@ -58,7 +58,7 @@
 .calculator__box_arfbox {
   width: 100%;
 }
-.calculator__box_arfbox--bth {
+.calculator__box_arfbox-bth {
   width: 27px;
   height: 25px;
   border-radius: 100%;

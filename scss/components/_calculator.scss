@@ -1,72 +1,71 @@
-.calculator{
+.calculator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    @extend %main-font;
+    font-style: italic;
+  }
+
+  &__box {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 
-    &__title{
-        @extend %main-font;
-        font-style: italic;
+    &_answer {
+      width: 135px;
+      min-height: 35px;
+      text-align: center;
+      color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $secondColor;
+      border-radius: 20px;
+      border: 0;
+      box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+    &-input {
+      width: 135px;
+      min-height: 35px;
+      text-align: center;
+      background-color: $secondColor;
+      border-radius: 20px;
+      border: 0;
+      box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+      margin-right: 25px;
+      margin-left: 25px;
     }
 
-    &__box{
+    &_arf {
+      width: 72px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &box {
         width: 100%;
-        display: flex;
-            justify-content: center;
-            align-items: center;
 
-        &_answer{
-            width: 135px;
-            min-height: 35px;
-            text-align: center;
-            color: gray;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $secondColor;
-            border-radius: 20px;
-            border: 0;
-            box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
-            margin-right: 25px;
-            margin-left: 25px;
+        &-bth {
+          width: 27px;
+          height: 25px;
+          border-radius: 100%;
+          text-align: center;
+          background-color: $mainColor;
+          color: white;
+          border: 0;
+          box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+          margin-right: 5px;
+          margin-bottom: 5px;
         }
-        &_input{
-            width: 135px;
-            min-height: 35px;
-            text-align: center;
-            background-color: $secondColor;
-            border-radius: 20px;
-            border: 0;
-            box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
-            margin-right: 25px;
-            margin-left: 25px;
-        }
-
-        &_arf{
-            width: 72px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            
-            &box{
-                width: 100%;
-
-                &--bth{
-                    width: 27px;
-                    height: 25px;
-                    border-radius: 100%;
-                    text-align: center;
-                    background-color: $mainColor;
-                    color: white;
-                    border: 0;
-                    box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
-                    margin-right: 5px;
-                    margin-bottom: 5px;
-                }
-            }
-        }
+      }
     }
-
+  }
 }
