@@ -5,12 +5,12 @@ let offset = 0;
 let positionCactus = 720;
 
 function moveRoad() {
-    offset -= 2; 
+    offset -= 2;
     document.getElementById('road').style.backgroundPositionX = offset + 'px';
-    
+
     let positionLeft = positionCactus + offset;
     searchObstacle.style.left = positionLeft + 'px';
-    
+
     if (positionLeft + searchObstacle.offsetWidth < 0) {
         positionCactus = 720;
         offset = 0;
@@ -39,11 +39,11 @@ function stopRoadAnimation() {
 function jump() {
     if (!searchDinosaur.classList.contains('jump')) {
         searchDinosaur.classList.add('jump');
-        searchDinosaur.classList.remove('run');  
+        searchDinosaur.classList.remove('run');
         setTimeout(() => {
             searchDinosaur.classList.remove('jump');
             searchDinosaur.classList.add('run');
-        }, 600); 
+        }, 600);
     }
 }
 
