@@ -25,7 +25,7 @@ function moveRoad() {
 
 function startRoadAnimation() {
     if (!roadMoving) {
-        roadMoving = setInterval(moveRoad, 20);
+        roadMoving = setInterval(moveRoad, 10);
     }
 }
 
@@ -59,7 +59,6 @@ function checkCollision() {
 document.addEventListener('keydown', event => {
     if (event.key === " ") {
         jump();
-       startRoadAnimation()
+        startRoadAnimation();
     }
 });
-
