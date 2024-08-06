@@ -18,7 +18,7 @@
 
         &_answer{
             width: 135px;
-            height: 35px;
+            min-height: 35px;
             text-align: center;
             color: gray;
             display: flex;
@@ -31,9 +31,9 @@
             margin-right: 25px;
             margin-left: 25px;
         }
-        &--input{
+        &_input{
             width: 135px;
-            height: 35px;
+            min-height: 35px;
             text-align: center;
             background-color: $secondColor;
             border-radius: 20px;
