@@ -41,7 +41,7 @@
 }
 
 #dinosaur {
-  background-image: url("scss/src/dino-run-1.png");
+  background-image: url("../src/dino-run-1.png");
   width: 60px;
   height: 60px;
   background-size: cover;
@@ -64,7 +64,7 @@
     top: 170px;
   }
   50% {
-    top: 30px;
+    top: 10px;
   }
   100% {
     top: 170px;
@@ -72,24 +72,24 @@
 }
 @keyframes run {
   0% {
-    background-image: url("scss/src/dino-run-1.png");
+    background-image: url("../src/dino-run-1.png");
   }
   50% {
-    background-image: url("scss/src/dino-stationary.png");
+    background-image: url("../src/dino-stationary.png");
   }
   100% {
-    background-image: url("scss/src/dino-run-0.png");
+    background-image: url("../src/dino-run-0.png");
   }
 }
 #road {
-  background-image: url("scss/src/road-google.png");
+  background-image: url("../src/road-google.png");
   background-repeat: repeat-x;
   width: 100%;
   height: 100%;
 }
 
 #obstacle {
-  background-image: url("scss/src/obstacle.png");
+  background-image: url("../src/obstacle.png");
   background-repeat: no-repeat;
   position: relative;
   top: 132px;
