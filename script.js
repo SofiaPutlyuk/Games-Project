@@ -9,6 +9,7 @@ const bthCalcDivide = document.querySelector("#bth-calc-divide");
 const bthCalcAnswer = document.querySelector("#bth-calc-answer");
 
 let selectedOperation = null;
+let selectedButton = null;
 
 function getNumbers() {
   const numb1 = parseFloat(inputCalcNumb1.value);
@@ -47,11 +48,25 @@ function calculate() {
   pCalcAnswer.textContent = answer;
 }
 
-bthCalcPlus.addEventListener("click", () => (selectedOperation = "add"));
-bthCalcMultiply.addEventListener(
-  "click",
-  () => (selectedOperation = "multiply")
+function selectOperation(operation, button) {
+  selectedOperation = operation;
+  if (selectedButton) {
+    selectedButton.classList.remove("selected");
+  }
+  selectedButton = button;
+  selectedButton.classList.add("selected");
+}
+
+bthCalcPlus.addEventListener("click", () =>
+  selectOperation("add", bthCalcPlus)
 );
-bthCalcMinus.addEventListener("click", () => (selectedOperation = "subtract"));
-bthCalcDivide.addEventListener("click", () => (selectedOperation = "divide"));
+bthCalcMultiply.addEventListener("click", () =>
+  selectOperation("multiply", bthCalcMultiply)
+);
+bthCalcMinus.addEventListener("click", () =>
+  selectOperation("subtract", bthCalcMinus)
+);
+bthCalcDivide.addEventListener("click", () =>
+  selectOperation("divide", bthCalcDivide)
+);
 bthCalcAnswer.addEventListener("click", calculate);
