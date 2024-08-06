@@ -105,7 +105,6 @@ body {
   background-color: darkgray;
   transition: background-color 0.3s;
 }
-
 .indicator-dot.active {
   width: 25px;
   background-color: gray;
