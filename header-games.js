@@ -30,22 +30,22 @@ const changeTransform = 'translate(10px)'
 const light = 'white'
 const dark = 'black'
 let toggle = false;
-searchIconswitch.addEventListener('click',function(){
- if(toggle){
-  searchIconswitch.src = imgSun
-  document.body.style.background = light
-  searchIconswitch.style.transform = currentTransform
-  searchIconswitch.style.background = light
-  searchMainContainer.style.background = light
- 
- } else {
-    searchIconswitch.src = imgMoon
-    document.body.style.background = dark;
-    searchIconswitch.style.transform = changeTransform
-    searchIconswitch.style.background = dark
-    searchMainContainer.style.background = dark
- }
- toggle = !toggle
+searchIconswitch.addEventListener('click', function () {
+    if (toggle) {
+        searchIconswitch.src = imgSun
+        document.body.style.background = light
+        searchIconswitch.style.transform = currentTransform
+        searchIconswitch.style.background = light
+        searchMainContainer.style.background = light
+
+    } else {
+        searchIconswitch.src = imgMoon
+        document.body.style.background = dark;
+        searchIconswitch.style.transform = changeTransform
+        searchIconswitch.style.background = dark
+        searchMainContainer.style.background = dark
+    }
+    toggle = !toggle
 })
 
 /*Модальне вікно */
@@ -55,17 +55,17 @@ const searchBackdrop = document.querySelector('.backdrop');
 const searchInputname = document.getElementById('inputName');
 const searchliname = document.querySelector('li:last-child');
 const buttonClose = document.getElementById('buttonClose');
-function closeButton(){
+function closeButton() {
     const buttonClose = document.getElementById('buttonClose');
-    if(buttonClose){
-        buttonClose.addEventListener('click',function(){
+    if (buttonClose) {
+        buttonClose.addEventListener('click', function () {
             searchModal.style.display = "none"
             searchBackdrop.style.display = "none"
-            
+
         })
     }
 }
-searchButtonSave.addEventListener('click',function(){
+searchButtonSave.addEventListener('click', function () {
     searchModal.innerHTML = `
     <div class="container-img__new">
     <button id="buttonClose">
