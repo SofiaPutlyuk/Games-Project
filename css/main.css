@@ -1,10 +1,9 @@
-@charset "UTF-8";
 .container {
   width: 100%;
   margin: auto;
   background-color: #F5F5F5;
   margin-top: 80px;
-  background-image: url("C:/Users/Owner/OneDrive/Документи/GitHub/Games-Project/scss/src/main-games.png");
+  background-image: url("../src/main-games.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
