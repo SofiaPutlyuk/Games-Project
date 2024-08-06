@@ -4,7 +4,7 @@
   margin: auto;
   background-color: #f5f5f5;
   margin-top: 80px;
-  background-image: url("C:/Users/Owner/OneDrive/Документи/GitHub/Games-Project/scss/src/main-games.png");
+  background-image: url("C:/Users/Owner/OneDrive/Документи/GitHub/Games-Project/src/main-games.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -23,6 +23,14 @@
   line-height: 29px;
   text-align: center;
   padding-top: 116px;
+}
+
+.text-label {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: center;
 }
 
 .container-header {
@@ -61,7 +69,7 @@
   width: 40px;
   height: 20px;
   border: none;
-  background: #7A7A7A;
+  background: #D7D7D7;
   border-radius: 11px;
   transform: translate(60px);
 }
@@ -85,7 +93,7 @@
   justify-content: center;
   border-width: 0px 1px 0px 1px;
   border-style: solid;
-  border-color: #000000;
+  border-color: black;
   font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;
@@ -116,7 +124,7 @@
   width: 576px;
   height: 316px;
   position: absolute;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 20px;
   margin: auto;
   top: 0;
@@ -141,7 +149,6 @@
   gap: 50px;
 }
 .container-img__new {
-  gap: 0px;
   display: flex;
 }
 
@@ -155,7 +162,7 @@
 }
 
 #buttonSave {
-  background: #000000;
+  background: black;
   width: 105px;
   height: 35px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
@@ -164,7 +171,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 14.63px;
-  color: #FFFFFF;
+  color: #fff;
   border: none;
 }
 
@@ -210,11 +217,6 @@
 
 .text-label {
   margin: auto;
-  font-family: "Inter";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14.52px;
-  text-align: center;
 }
 
 .space-container {

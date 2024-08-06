@@ -22,25 +22,28 @@ searchArrowbutton.addEventListener('click', function () {
 /*Іконка */
 const searchIconswitch = document.getElementById('imgSun')
 const searchButtonswitch = document.getElementById('button-switch')
-const imgSun = "button-sun.png"
-const imgMoon = "button-moon.png"
+const searchMainContainer = document.querySelector('.main-content')
+const imgSun = "src/button-sun.png"
+const imgMoon = "src/button-moon.png"
 const currentTransform = 'translate(-10px)'
 const changeTransform = 'translate(10px)'
-const colorBodyCurrent = 'white'
-const colorBodyChange = 'black'
+const light = 'white'
+const dark = 'black'
 let toggle = false;
 searchIconswitch.addEventListener('click',function(){
  if(toggle){
   searchIconswitch.src = imgSun
-  document.body.style.background = colorBodyCurrent
+  document.body.style.background = light
   searchIconswitch.style.transform = currentTransform
-  searchIconswitch.style.background = colorBodyCurrent
+  searchIconswitch.style.background = light
+  searchMainContainer.style.background = light
  
  } else {
     searchIconswitch.src = imgMoon
-    document.body.style.background = colorBodyChange;
+    document.body.style.background = dark;
     searchIconswitch.style.transform = changeTransform
-    searchIconswitch.style.background = colorBodyChange
+    searchIconswitch.style.background = dark
+    searchMainContainer.style.background = dark
  }
  toggle = !toggle
 })
@@ -66,11 +69,11 @@ searchButtonSave.addEventListener('click',function(){
     searchModal.innerHTML = `
     <div class="container-img__new">
     <button id="buttonClose">
-    <img src="button-close.png" alt="button-close" />
+    <img src="src/button-close.png" alt="button-close" />
 </button>
-<img src="sword-puzzle.png" alt="photo"/>
+<img src="src/sword-puzzle.png" alt="photo"/>
 <p class="text-subscribe">Дякую за підписку!</p>
-<img src="game-console.png" alt="photo2"/>
+<img src="src/game-console.png" alt="photo2"/>
 
     </div>
     
