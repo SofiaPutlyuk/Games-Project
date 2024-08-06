@@ -1,11 +1,9 @@
 /*Калькулятор року */
 const searchInputYear = document.getElementById('yearInput');
 const searchicon = document.getElementById('icon');
-
 searchicon.addEventListener('click', function () {
     const searchValueYear = parseInt(searchInputYear.value, 10);
     const existingMessage = document.getElementById('yearCheck');
-
     if (existingMessage) {
         existingMessage.remove();
     }
