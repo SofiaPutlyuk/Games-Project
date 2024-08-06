@@ -1,16 +1,15 @@
 const dataInput = document.querySelector("#data-calc-input");
-        const dataBth = document.querySelector("#data-calc-button");
-        const dataAnswer = document.querySelector("#data-calc-answer");
+const dataBth = document.querySelector("#data-calc-button");
+const dataAnswer = document.querySelector("#data-calc-answer");
 
 dataBth.addEventListener("click", () => {
-    const value = Number(dataInput.value)
+  const value = Number(dataInput.value);
 
-    const days = Math.floor(value / (24 * 3600));
-    const hours = Math.floor((value % (24 * 3600)) / 3600);
-    const minutes = Math.floor((value % 3600) / 60);
-    const seconds = value % 60;
+  const days = Math.floor(value / (24 * 3600));
+  const hours = Math.floor((value % (24 * 3600)) / 3600);
+  const minutes = Math.floor((value % 3600) / 60);
+  const seconds = value % 60;
 
-    const answer = `${days} дн. ${Number(hours)}:${Number(minutes)}:${Number(seconds)}`;
-    dataAnswer.textContent = answer;
+  const answer = `${days} дн. ${hours}:${minutes}:${seconds}`;
+  dataAnswer.textContent = answer;
 });
-        
