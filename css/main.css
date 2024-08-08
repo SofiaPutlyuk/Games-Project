@@ -1,10 +1,9 @@
-@charset "UTF-8";
 .container {
   width: 100%;
   margin: auto;
   background-color: #F5F5F5;
   margin-top: 80px;
-  background-image: url("C:/Users/Owner/OneDrive/Документи/GitHub/Games-Project/scss/src/main-games.png");
+  background-image: url("../src/main-games.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -24,7 +23,7 @@
   padding-top: 116px;
 }
 
-.footer-text {
+a {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -47,7 +46,7 @@ input {
   background: none;
 }
 
-.footer-container {
+.footer {
   width: 100%;
   height: 220px;
   display: flex;
@@ -56,36 +55,29 @@ input {
   background-color: #fff;
   margin: auto;
 }
-
-.footer-text {
-  width: 207px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
-.footer-input-container input,
-.footer-input-container button {
+.footer-subscribe__input {
   background: #D7D7D7;
   height: 35px;
   font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
+  width: 204px;
+  padding-left: 10px;
 }
-
-.footer-input-container button {
+.footer-subscribe__button {
   background: black;
   color: #fff;
   cursor: pointer;
   width: 107px;
   margin-left: 40px;
+  height: 35px;
 }
 
-.footer-input-container input {
-  background: #D7D7D7;
-  width: 204px;
-  padding-left: 10px;
+a {
+  font-size: 12px;
+  text-decoration: none;
+  color: initial;
 }
 
 .modal {
@@ -94,8 +86,7 @@ input {
   border-radius: 20px;
   background-color: #fff;
 }
-
-.modal-content {
+.modal__content {
   display: flex;
   justify-content: space-around;
 }
