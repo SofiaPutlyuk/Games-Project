@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: $lightGreyColor;
+    margin-top: 80px;
+    background-image: url('../src/main-games.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content {
+    width: 1090px;
+    background-color: $whiteColor;
+    margin: auto;
+}
+
+.main-title {
+    font-family: 'Montserrat Alternates';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 116px;
+}
+.dash {
+    margin-top:20px;
+    width: 536px;
+    border: 1px solid #000000;
+}
