@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    
+
+     
   <main class="container">
     <div class="main-content">
       <h1 class="main-title">Популярні інетрактивні ігри</h1>
@@ -41,6 +44,26 @@
         </div>
       </div>
      </div>
+     
+     <!-- sctVSscVSpa -->
+     <hr>
+     <article class="sctVSscVSpa">
+        <h2 class="sctVSscVSpa__title">Камінь - ножиці - папір</h2>
+        <div class="sctVSscVSpa__box">
+            <div class="sctVSscVSpa__box_btn">
+                <button id="stone" class="sctVSscVSpa__box_btn--vs"><img src="./images/stone.png" alt="stone"></button>
+                <button id="scissors" class="sctVSscVSpa__box_btn--vs"><img src="./images/scissors.png" alt="scissors"></button>
+                <button id="paper" class="sctVSscVSpa__box_btn--vs"><img src="./images/paper.png" alt="paper"></button>
+            </div>
+            <div class="sctVSscVSpa__box_scoreboard">
+                <p class="sctVSscVSpa__box_scoreboard--txt">Рахунок:</p>
+                <p id="compScore" class="sctVSscVSpa__box_scoreboard--txt sctVSscVSpa__box_scoreboard--txt-score">Комп’ютер - </p>
+                <p id="userScore" class="sctVSscVSpa__box_scoreboard--txt sctVSscVSpa__box_scoreboard--txt-score">Ви - </p>
+            </div>
+        </div>
+        <p id="whoWonThere" class="sctVSscVSpa__answer">Хто виграв раунд?</p>
+        <button id="play" class="sctVSscVSpa__btn">Варіант комп’ютера</button>
+     </article>
   </main>
   <footer class="footer">
     <img src="icon\icon-game.png" alt="icon-game" />
@@ -59,6 +82,7 @@
       <p class="text-inform">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
     </div>
   </footer>
+  <script src="script.js"></script>
   <script src="google-dinosaur.js"></script>
   <script src="calculate-year.js"></script>
   <script src="footer.js"></script>
