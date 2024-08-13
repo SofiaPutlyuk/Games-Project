@@ -1,12 +1,12 @@
 .title-dinosaur-google {
     @extend %main-font;
+    margin-top: 20px;
 }
 
 .container-google-dinosaur {
     width: 720px;
     height: 241px;
     margin: auto;
-    margin-top: 50px;
     overflow: hidden;
 }
 
