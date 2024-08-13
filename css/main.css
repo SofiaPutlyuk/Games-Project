@@ -29,7 +29,7 @@
   border: 1px solid #000000;
 }
 
-.result-input, .container-check-year__text, .title-dinosaur-google {
+.game-contact, .result-input, .container-check-year__text, .title-dinosaur-google {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -37,11 +37,22 @@
   text-align: center;
 }
 
+.text-thanks {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: center;
+}
+
+.title-dinosaur-google {
+  margin-top: 20px;
+}
+
 .container-google-dinosaur {
   width: 720px;
   height: 241px;
   margin: auto;
-  margin-top: 50px;
   overflow: hidden;
 }
 
@@ -154,4 +165,92 @@
 
 .input-container {
   display: flex;
+}
+
+.footer {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  margin: auto;
+}
+.footer-subscribe__input {
+  background: #D7D7D7;
+  height: 35px;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  width: 204px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 20px;
+}
+.footer-subscribe__button {
+  background: black;
+  color: #fff;
+  cursor: pointer;
+  width: 107px;
+  margin-left: 40px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+}
+
+.game-contact {
+  font-size: 12px;
+  text-decoration: none;
+  color: initial;
+}
+
+.modal {
+  width: 463px;
+  height: 245px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.modal__content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.backdrop-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease-out, visibility 300ms ease-out;
+}
+
+.text-thanks {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 50px;
+}
+
+.text-inform {
+  font-family: "Montserrat Alternates";
+  font-size: 6px;
+  font-weight: 400;
+  line-height: 7px;
+  text-align: left;
+  margin-top: 6px;
+}
+
+#footerButton {
+  position: relative;
+  left: 90%;
+  top: 5%;
+  border: none;
 }
