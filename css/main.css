@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.game-contact, .result-input, .container-check-year__text, .title-dinosaur-google, .data-calculator__title {
+.game-contact, .result-input, .container-check-year__text, .title-dinosaur-google, .sctVSscVSpa__title, .data-calculator__title {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -110,20 +110,75 @@
   border: 1px solid #000000;
 }
 
-.game-contact, .result-input, .container-check-year__text, .title-dinosaur-google, .data-calculator__title {
+.sctVSscVSpa {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sctVSscVSpa__answer {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
-  text-align: center;
+  line-height: 19.5px;
+  font-style: italic;
+  color: #D7D7D7;
+  margin-top: 15px;
 }
-
-.text-thanks {
-  font-family: "Inter";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14.52px;
+.sctVSscVSpa__btn {
+  width: 160px;
+  height: 35px;
   text-align: center;
+  color: #fff;
+  background-color: black;
+  border-radius: 20px;
+  border: 0;
+  margin-top: 36px;
+}
+.sctVSscVSpa__title {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.sctVSscVSpa__box {
+  width: 593px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sctVSscVSpa__box_btn {
+  width: 256px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.sctVSscVSpa__box_btn--vs {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border-color: black;
+  background-color: black;
+}
+.sctVSscVSpa__box_scoreboard {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.sctVSscVSpa__box_scoreboard--txt {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.sctVSscVSpa__box_scoreboard--txt-score::after {
+  content: "0";
 }
 
 .title-dinosaur-google {
