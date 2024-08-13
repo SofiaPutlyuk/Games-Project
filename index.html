@@ -17,9 +17,6 @@
 </head>
 
 <body>
-    
-
-     
   <main class="container">
     <div class="main-content">
       <h1 class="main-title">Популярні інетрактивні ігри</h1>
@@ -45,6 +42,22 @@
       </div>
      </div>
      
+
+     <!-- Data calculator -->
+     <article class="data-calculator">
+        <hr>
+        <h2 class="data-calculator__title">Калькулятор часу</h2>
+        <div class="data-calculator__box">
+            <div class="data-calculator__item">
+                <input id="data-calc-input" name="data-calc-input-name" class="data-calculator__item-input" type="number" placeholder="Введіть число">
+                <button id="data-calc-button" for="data-calc-input-name" class="data-calculator__item-bth">🔍</button>
+            </div>
+            <div class="data-calculator__itemanswer">
+                <p class="data-calculator__itemanswer-answerpe">-----------</p>
+                <p id="data-calc-answer" class="data-calculator__itemanswer-answer">.......</p>
+            </div>
+        </div>
+
      <!-- sctVSscVSpa -->
      <hr>
      <article class="sctVSscVSpa">
@@ -63,6 +76,7 @@
         </div>
         <p id="whoWonThere" class="sctVSscVSpa__answer">Хто виграв раунд?</p>
         <button id="play" class="sctVSscVSpa__btn">Варіант комп’ютера</button>
+
      </article>
   </main>
   <footer class="footer">
