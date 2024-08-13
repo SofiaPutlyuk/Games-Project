@@ -23,7 +23,7 @@
   padding-top: 116px;
 }
 
-a {
+.game-contact {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -74,7 +74,7 @@ input {
   height: 35px;
 }
 
-a {
+.game-contact {
   font-size: 12px;
   text-decoration: none;
   color: initial;
