@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-    <!-- calculator -->
+
+<body>  
+  <main class="container">
+    <div class="main-content">
+      <h1 class="main-title">Популярні інетрактивні ігри</h1>
+      <div class="container-check-year">
+        <hr class="dash">
+        <p class="container-check-year__text">Перевір в який рік ти народився</p>
+        <form class="box-input">
+          <div class="input-container">
+            <input type="text" placeholder="Введіть рік народження" class="input-year" id="yearInput" />
+            <button type="button" id="icon">
+            </button>
+          </div>
+        </form>
+      </div>
+      <hr class="dash"/>
+      <p class="title-dinosaur-google">Google динозавр</p>
+      <div class="container-google-dinosaur">
+        <div id="dinosaur"></div>
+        <div id="road">
+          <div id="obstacle">
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <!-- calculator -->
      <article class="calculator">
         <hr>
         <h2 class="calculator__title">Калькулятор</h2>
@@ -34,8 +65,48 @@
             <p id="p-calc-answer" class="calculator__box_answer">Результат</p>
         </div>
      </article>
-
-     <script src="script.js"></script>
+     
+     <!-- sctVSscVSpa -->
+     <hr>
+     <article class="sctVSscVSpa">
+        <h2 class="sctVSscVSpa__title">Камінь - ножиці - папір</h2>
+        <div class="sctVSscVSpa__box">
+            <div class="sctVSscVSpa__box_btn">
+                <button id="stone" class="sctVSscVSpa__box_btn--vs"><img src="./images/stone.png" alt="stone"></button>
+                <button id="scissors" class="sctVSscVSpa__box_btn--vs"><img src="./images/scissors.png" alt="scissors"></button>
+                <button id="paper" class="sctVSscVSpa__box_btn--vs"><img src="./images/paper.png" alt="paper"></button>
+            </div>
+            <div class="sctVSscVSpa__box_scoreboard">
+                <p class="sctVSscVSpa__box_scoreboard--txt">Рахунок:</p>
+                <p id="compScore" class="sctVSscVSpa__box_scoreboard--txt sctVSscVSpa__box_scoreboard--txt-score">Комп’ютер - </p>
+                <p id="userScore" class="sctVSscVSpa__box_scoreboard--txt sctVSscVSpa__box_scoreboard--txt-score">Ви - </p>
+            </div>
+        </div>
+        <p id="whoWonThere" class="sctVSscVSpa__answer">Хто виграв раунд?</p>
+        <button id="play" class="sctVSscVSpa__btn">Варіант комп’ютера</button>
+     </article>
+  </main>
+  <footer class="footer">
+    <img src="icon\icon-game.png" alt="icon-game" />
+    <div>
+      <p><a href="tel:+381234567890" class="game-contact">Тел: +38 (123) 456 78 90</a></p>
+      <p><a href="mailto:codingmagic@gmail.com" class="game-contact">E-Mail: codingmagic@gmail.com</a></p>
+      <p><a href="https://www.facebook.com/CodingMagic" target="_blank" class="game-contact">Facebook: CodingMagic</a>
+      </p>
+      <p><a href="https://twitter.com/CodingMagic" target="_blank" class="game-contact">Twitter: CodingMagic</a></p>
+      <p><a href="https://www.instagram.com/CodingMagic" target="_blank" class="game-contact">Instagram: CodingMagic</a>
+      </p>
+    </div>
+    <div class="footer-subscribe">
+      <input type="text" placeholder="Ваша ел. адреса..." class="footer-subscribe__input" id="footerInput" />
+      <button class="footer-subscribe__button">Підписатись</button>
+      <p class="text-inform">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="google-dinosaur.js"></script>
+  <script src="calculate-year.js"></script>
+  <script src="footer.js"></script>
 </body>
 </html>
 
