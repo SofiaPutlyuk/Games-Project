@@ -1,3 +1,4 @@
+// calculator
 
 const inputCalcNumb1 = document.querySelector("#input-calc-numb1");
 const inputCalcNumb2 = document.querySelector("#input-calc-numb2");
@@ -72,6 +73,8 @@ bthCalcDivide.addEventListener("click", () =>
 );
 bthCalcAnswer.addEventListener("click", calculate);
 
+// data-calculator
+
 const dataInput = document.querySelector("#data-calc-input");
 const dataBth = document.querySelector("#data-calc-button");
 const dataAnswer = document.querySelector("#data-calc-answer");
@@ -86,6 +89,9 @@ dataBth.addEventListener("click", () => {
 
   const answer = `${days} дн. ${hours}:${minutes}:${seconds}`;
   dataAnswer.textContent = answer;
+});
+
+// sctVSscVspa
 
 document.addEventListener("DOMContentLoaded", function() {
     const stoneBth = document.getElementById("stone");
@@ -160,4 +166,4 @@ document.addEventListener("DOMContentLoaded", function() {
         whoWon.style.color = "black";
     });
 });
-});
+
