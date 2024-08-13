@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   width: 100%;
   margin: auto;
@@ -23,7 +24,12 @@
   padding-top: 116px;
 }
 
-.title-dinosaur-google {
+.dash {
+  width: 536px;
+  border: 1px solid #000000;
+}
+
+.result-input, .container-check-year__text, .title-dinosaur-google {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -95,4 +101,57 @@
   height: 79px;
   left: 720px;
   width: 20px;
+}
+
+.input-year {
+  width: 215px;
+  height: 35px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  background: #D7D7D7;
+  border-radius: 20px;
+  border: none;
+  padding-left: 10px;
+}
+
+.container-check-year {
+  display: grid;
+  gap: 25px;
+  width: 578px;
+  margin: auto;
+}
+.button-year {
+  border: none;
+  background: none;
+}
+
+.result-input {
+  font-size: 12px;
+  line-height: 15px;
+}
+.result-input__green {
+  color: #039900;
+}
+.result-input__red {
+  color: #990000;
+}
+
+.box-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#icon {
+  position: relative;
+  right: 13%;
+  background-image: url("C:/Users/Owner/OneDrive/Документи/GitHub/Games-Project/scss/src/icons/icon-input-year.png");
+  width: 35px;
+  background-size: cover;
+  height: 35px;
+  border: none;
+  background-color: initial;
+}
+
+.input-container {
+  display: flex;
 }
