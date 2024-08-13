@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.game-contact, .result-input, .container-check-year__text, .title-dinosaur-google, .sctVSscVSpa__title, .data-calculator__title {
+.game-contact, .result-input, .container-check-year__text, .title-dinosaur-google, .sctVSscVSpa__title, .data-calculator__title, .calculator__title {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -13,6 +13,75 @@
   font-weight: 400;
   line-height: 14.52px;
   text-align: center;
+}
+
+.calculator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.calculator__title {
+  font-style: italic;
+}
+.calculator__box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator__box-input {
+  width: 135px;
+  min-height: 35px;
+  text-align: center;
+  background-color: #D7D7D7;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.calculator__box-arf {
+  width: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.calculator__box-arfbox {
+  width: 100%;
+}
+.calculator__box-arfbox-bth {
+  width: 27px;
+  height: 25px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 0;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.calculator__box-arfbox-bth.selected {
+  background-color: rgb(34, 76, 204);
+  color: #000;
+}
+.calculator__box_answer {
+  width: 135px;
+  min-height: 35px;
+  text-align: center;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D7D7D7;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .data-calculator {
