@@ -42,25 +42,25 @@
       min-width: 100%;
       transition: transform 0.5s ease-in-out;
 
-      &--img {
+      &-img {
         max-width: 100%;
         width: 150px;
         height: 150px;
         border-radius: 20px;
       }
 
-      &--title {
+      &-title {
         @extend %main-font;
         margin-bottom: 15px;
       }
 
-      &--subtitle {
+      &-subtitle {
         @extend %second-font;
         text-align: center;
       }
     }
 
-    &--btn {
+    &-btn {
       width: 50px;
       height: 100px;
       background-color: transparent;
