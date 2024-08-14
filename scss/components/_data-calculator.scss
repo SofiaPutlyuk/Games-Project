@@ -1,0 +1,71 @@
+.data-calculator {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    @extend %main-font;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+
+  &__box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    width: 70px;
+    height: 45px;
+    display: flex;
+    margin-right: 110px;
+
+    &-bth {
+      width: 50px;
+      height: 37px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $mainColor;
+      border-radius: 0 20px 20px 0;
+      border: 0;
+      box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    &-input {
+      width: 135px;
+      height: 35px;
+      text-align: center;
+      color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $secondColor;
+      border-radius: 20px 0 0 20px;
+      border: 0;
+      box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    &answer {
+      width: 200px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      &-answer {
+        width: 190px;
+        margin-left: 25px;
+        &pe {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
