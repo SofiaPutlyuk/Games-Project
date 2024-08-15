@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .game-contact, .result-input, .container-check-year__text, .title-dinosaur-google, .sctVSscVSpa__title, .data-calculator__title, .calculator__title {
   font-family: "Montserrat Alternates";
   font-size: 16px;
@@ -360,7 +359,7 @@
 #icon {
   position: relative;
   right: 13%;
-  background-image: url("C:/Users/Owner/OneDrive/Документи/GitHub/Games-Project/scss/src/icons/icon-input-year.png");
+  background-image: url("../icon/input-icon-year.png");
   width: 35px;
   background-size: cover;
   height: 35px;
