@@ -23,6 +23,14 @@ searchArrowbutton.addEventListener('click', function () {
 const searchIconswitch = document.getElementById('imgSun')
 const searchButtonswitch = document.getElementById('button-switch')
 const searchMainContainer = document.querySelector('.main-content')
+const searchFooter = document.querySelector('footer')
+const searchIcon = document.querySelectorAll('#icon-color')
+console.log(searchIcon)
+
+/*Текст */
+const searchElements = document.querySelectorAll('p, li, h1, h2,a')  
+console.log(searchElements)
+/*Зміна */
 const imgSun = "src/button-sun.png"
 const imgMoon = "src/button-moon.png"
 const currentTransform = 'translate(-10px)'
@@ -30,6 +38,14 @@ const changeTransform = 'translate(10px)'
 const light = 'white'
 const dark = 'black'
 let toggle = false;
+function changeColors(color , background) {
+    searchElements.forEach(element => {
+        element.style.color = color;
+    });
+    searchIcon.forEach(elem => {
+        elem.style.background = background;
+    })
+}
 searchIconswitch.addEventListener('click', function () {
     if (toggle) {
         searchIconswitch.src = imgSun
@@ -37,6 +53,8 @@ searchIconswitch.addEventListener('click', function () {
         searchIconswitch.style.transform = currentTransform
         searchIconswitch.style.background = light
         searchMainContainer.style.background = light
+        searchFooter.style.background = light
+        changeColors(dark,light)
 
     } else {
         searchIconswitch.src = imgMoon
@@ -44,6 +62,8 @@ searchIconswitch.addEventListener('click', function () {
         searchIconswitch.style.transform = changeTransform
         searchIconswitch.style.background = dark
         searchMainContainer.style.background = dark
+        searchFooter.style.background = dark
+     changeColors(light,light)
     }
     toggle = !toggle
 })
