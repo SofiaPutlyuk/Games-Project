@@ -9,6 +9,9 @@
 
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="css/main.css" />
+
+
+  <!--Montserrat Alternates-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,10 +19,55 @@
     rel="stylesheet">
 </head>
 
-<body>  
-
 <body>
-
+<div class="backdrop">
+  <div class="modal-content">
+    <button id="buttonClose">
+      <img src="src/button-close.png" alt="button-close" />
+    </button>
+    <div class="space-container">
+      <p class="text-modal">
+        Привіт! Ви потрапили на сайт інтерактивних ігор та завдань
+        Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+        Бажаємо Вам гарно провести час!
+      </p>
+      <div class="container-img">
+        <img src="src/sword-puzzle.png" alt="sword-puzzle" />
+        <form class="form-name">
+          <div class="form-group">
+            <label for="inputName" class="text-label">Введіть своє ім’я:</label>
+            <input type="text" placeholder="Ваше ім’я..." id="inputName" />
+          </div>
+          <button type="button" id="buttonSave">Зберегти</button>
+        </form>
+        <img src="src/game-console.png" alt="game-console" />
+      </div>
+    </div>
+  </div>
+</div>
+<header>
+  <nav>
+    <ul class="container-header">
+      <li class="container-header__item">
+        <img src="src/icon-header.png" alt="icon-header" id="icon-color" />
+      </li>
+      <li class="container-header__item">
+        Інтерактив
+        <button id="buttonArrow">
+          <img src="src/header-arrow.png" alt="header-arrow" />
+        </button>
+      </li>
+      <li class="container-header__item">Наша команда</li>
+      <li class="container-header__item">Контакти</li>
+      <li>
+        <button id="button-switch">
+          <img src="src/button-sun.png" alt="sun-icon" id="imgSun" />
+        </button>
+      </li>
+      <li class="container-header__item">Вітаємо, User!</li>
+    </ul>
+  </nav>
+</header>
   <main class="container">
     <div class="main-content">
       <h1 class="main-title">Популярні інетрактивні ігри</h1>
@@ -108,7 +156,7 @@
     </div>
   </main>
   <footer class="footer">
-    <img src="icon\icon-game.png" alt="icon-game" />
+    <img src="icon\icon-game.png" alt="icon-game" id="icon-color"/>
     <div>
       <p><a href="tel:+381234567890" class="game-contact">Тел: +38 (123) 456 78 90</a></p>
       <p><a href="mailto:codingmagic@gmail.com" class="game-contact">E-Mail: codingmagic@gmail.com</a></p>
@@ -128,6 +176,7 @@
   <script src="google-dinosaur.js"></script>
   <script src="calculate-year.js"></script>
   <script src="footer.js"></script>
+  <script src="header-games.js"></script>
 </body>
 </html>
 
