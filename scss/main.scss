@@ -1,5 +1,8 @@
-@import "components/utils/placeholder";
 @import "components/utils/variable";
+@import "components/utils/global";
+@import "components/utils/placeholder";
+@import "components/header-games";
+@import "components/modal-window";
 @import "components/calculator";
 @import "components/data-calculator";
 @import "components/utils/global";
@@ -7,3 +10,4 @@
 @import "components/google-dinosaur";
 @import "components/calculate-year-section";
 @import "components/footer-game";
+
