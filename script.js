@@ -1,3 +1,78 @@
+// our team
+const carouselInner = document.querySelector('.our-team__carousel_inner');
+const cards = document.querySelectorAll('.our-team__carousel_card');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const carouselIndicator = document.getElementById('carouselIndicator');
+
+let currentIndex = 0;
+const totalSlides = cards.length;
+
+for (let i = 0; i < totalSlides; i++) {
+  const dot = document.createElement('div');
+  dot.classList.add('indicator-dot');
+  if (i === currentIndex) {
+    dot.classList.add('active');
+  }
+  carouselIndicator.appendChild(dot);
+}
+
+function updateIndicator() {
+  const dots = document.querySelectorAll('.indicator-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentIndex);
+  });
+}
+
+function showCard(index) {
+  carouselInner.style.transform = `translateX(-${index * 100}%)`;
+  updateIndicator();
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex > 0) ? currentIndex - 1 : cards.length - 1;
+  showCard(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex < cards.length - 1) ? currentIndex + 1 : 0;
+  showCard(currentIndex);
+});
+
+showCard(currentIndex);
+
+//Вгадайте число
+const randomNumber = Math.floor(Math.random() * 10) + 1;
+const userGuessInput = document.getElementById("userGuess");
+const checkButton = document.getElementById("checkButton");
+const resultMessage = document.getElementById("resultMessage");
+checkButton.addEventListener("click", () => {
+  const userGuess = Number(userGuessInput.value);
+  if (userGuess === randomNumber) {
+    resultMessage.textContent = `Вітаю, ви вгадали число! (${randomNumber})`;
+    resultMessage.style.color = "#039900";
+  } else {
+    resultMessage.textContent = "Спробуйте ще раз!";
+    resultMessage.style.color = "red";
+  }
+});
+//Введіть 3 числа
+const number1Input = document.getElementById("number1");
+const number2Input = document.getElementById("number2");
+const number3Input = document.getElementById("number3");
+const resultMessageNumber = document.getElementById("resultMessageNumber");
+
+function updateLargestNumber() {
+  const num1 = Number(number1Input.value);
+  const num2 = Number(number2Input.value);
+  const num3 = Number(number3Input.value);
+  const largestNumber = Math.max(num1, num2, num3);
+  resultMessageNumber.textContent = `Найбільше число, яке ви ввели -  ${largestNumber}`;
+}
+
+number1Input.addEventListener("input", updateLargestNumber);
+number2Input.addEventListener("input", updateLargestNumber);
+number3Input.addEventListener("input", updateLargestNumber);
 // calculator
 
 const inputCalcNumb1 = document.querySelector("#input-calc-numb1");
@@ -178,3 +253,4 @@ field.addEventListener('click', function(event) {
 
     ball.style.transform = `translateX(${x - ball.offsetWidth / 2}px) translateY(${y - ball.offsetHeight / 2}px)`;
 });
+

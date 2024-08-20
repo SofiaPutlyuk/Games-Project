@@ -45,6 +45,7 @@
     </div>
   </div>
 </div>
+
 <header>
   <nav>
     <ul class="container-header">
@@ -68,6 +69,7 @@
     </ul>
   </nav>
 </header>
+
   <main class="container">
     <div class="main-content">
       <h1 class="main-title">Популярні інетрактивні ігри</h1>
@@ -82,6 +84,31 @@
           </div>
         </form>
       </div>
+      <!--Guess the number-->
+      <hr class="dash"/>
+      <section class="guess-the-number">
+        <h2 class="guess-the-number__title">
+          Вгадай число, яке загадав комп’ютер
+        </h2>
+        <div class="guess-the-number_content" id="guess-content">
+         <div class="guess-the-number_content__box">
+          <input
+              type="number"
+              id="userGuess"
+              class="guess-the-number_content--input"
+              placeholder="Введіть число"
+            />
+            <button id="checkButton" class="guess-the-number_content--button">
+              <img
+                class="guess-the-number_content--search"
+                src="src/search.png"
+                alt="search"
+              />
+            </button>
+          </div>
+          <p id="resultMessage" class="guess-the-number_content--result"></p>
+        </div>
+      </section>
       <hr class="dash"/>
       <p class="title-dinosaur-google">Google динозавр</p>
       <div class="container-google-dinosaur">
@@ -91,7 +118,34 @@
           </div>
         </div>
       </div>
-     
+      <!--Введіть 3 числа-->
+      <hr class="dash"/>
+      <section class="largest-number">
+      <h2 class="largest-number_title">Введіть 3 числа</h2>
+        <div class="largest-number_content">
+          <div>
+            <input
+              type="number"
+              class="largest-number_content--input"
+              placeholder="Введіть число"
+              id="number1"
+            />
+            <input
+              type="number"
+              class="largest-number_content--input"
+              placeholder="Введіть число"
+              id="number2"
+            />
+            <input
+              type="number"
+              class="largest-number_content--input"
+              placeholder="Введіть число"
+              id="number3"
+            />
+          </div>
+          <p id="resultMessageNumber" class="largest-number_content--text">Найбільше число, яке ви ввели - (число)</p>
+        </div>
+      </section>
 
      <!-- calculator -->
      <hr class="dash">
@@ -116,6 +170,44 @@
                 </div>
             <p id="p-calc-answer" class="calculator__box_answer">Результат</p>
         </div>
+      </div>
+<!-- our team -->
+<hr class="dash">
+      <div class="our-team">
+        <h2 class="our-team__title">Наша команда</h2>
+        <div class="our-team__carousel">
+          <button class="our-team__carousel-btn" id="prevBtn"><img src="./images/left.png" alt="left"></button>
+          <div class="our-team__carousel_container">
+            <div class="our-team__carousel_inner">
+              <div class="our-team__carousel_card">
+                <img class="our-team__carousel_card-img" src="./images/sofia.png" alt="Sofia">
+                <h3 class="our-team__carousel_card-title">Софія</h3>
+                <p class="our-team__carousel_card-subtitle">Вона виконувала такі секції як: 
+                  <br>
+                  Хедер + модал вікно, Перевірка року, Футер, Динозавр
+                </p>
+              </div>
+              <div class="our-team__carousel_card">
+                <img class="our-team__carousel_card-img" src="./images/dima.png" alt="Dima">
+                <h3 class="our-team__carousel_card-title">Дмитро</h3>
+                <p class="our-team__carousel_card-subtitle">Він виконував такі секції як:
+                  <br>
+                  Калькулятор, Калькулятор часу, камінь-ножиці-папір, Наша команда
+                </p>
+              </div>
+              <div class="our-team__carousel_card">
+                <img class="our-team__carousel_card-img" src="./images/valeria.png" alt="Valeria">
+                <h3 class="our-team__carousel_card-title">Валерія</h3>
+                <p class="our-team__carousel_card-subtitle">Вона виконувала такі секції як:
+                  <br> 
+                  Вгадай число, 3 числа, Футбол, Обери вченого
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="our-team__carousel-btn" id="nextBtn"><img src="./images/right.png" alt="right"></button>
+        </div>
+        <div class="our-team__carousel_indicator" id="carouselIndicator"></div>
       </div>
      
 
@@ -190,4 +282,3 @@
   <script src="header-games.js"></script>
 </body>
 </html>
-

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  background-image: url("./src/main-games.png");
+}
+
 .container {
   width: 100%;
   margin: auto;
@@ -29,7 +33,7 @@
   border: 1px solid #000000;
 }
 
-.football__title, .game-contact, .result-input, .container-check-year__text, .title-dinosaur-google, .sctVSscVSpa__title, .data-calculator__title, .calculator__title {
+.our-team__carousel_card-title, .our-team__title, .football__title, .game-contact, .largest-number_content--text, .largest-number_title, .result-input, .container-check-year__text, .guess-the-number_content--result, .guess-the-number_content--input, .guess-the-number__title, .title-dinosaur-google, .sctVSscVSpa__title, .data-calculator__title, .calculator__title {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -37,7 +41,7 @@
   text-align: center;
 }
 
-.text-thanks, .text-label {
+.our-team__carousel_card-subtitle, .text-thanks, .text-label {
   font-family: "Inter";
   font-size: 12px;
   font-weight: 400;
@@ -370,36 +374,6 @@
   margin-left: 50px;
 }
 
-.container {
-  width: 100%;
-  margin: auto;
-  background-color: #F5F5F5;
-  background-image: url("../src/main-games.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-content {
-  width: 1090px;
-  background-color: #fff;
-  margin: auto;
-}
-
-.main-title {
-  font-family: "Montserrat Alternates";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-  text-align: center;
-  padding-top: 116px;
-}
-
-.dash {
-  margin-top: 20px;
-  width: 536px;
-  border: 1px solid #000000;
-}
-
 .sctVSscVSpa {
   width: 100%;
   position: relative;
@@ -539,6 +513,54 @@
   width: 20px;
 }
 
+.guess-the-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.guess-the-number__title {
+  color: black;
+}
+.guess-the-number_content {
+  display: grid;
+  width: 576px;
+  margin-top: 36px;
+  align-items: center;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+.guess-the-number_content__box {
+  display: flex;
+}
+.guess-the-number_content--input {
+  width: 125px;
+  border-radius: 20px 0 0 20px;
+  background: #D7D7D7;
+  font-size: 12px;
+  line-height: 14.63px;
+  border: 0;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  color: #7e7e7e;
+  padding-left: 10px;
+}
+.guess-the-number_content--button {
+  width: 35px;
+  height: 35px;
+  border-radius: 0 20px 20px 0;
+  background-color: black;
+  border: 0;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.guess-the-number_content--search {
+  width: 15px;
+  height: 15px;
+}
+.guess-the-number_content--result {
+  margin-top: 10px;
+}
+
 .input-year {
   width: 215px;
   height: 35px;
@@ -590,6 +612,40 @@
 
 .input-container {
   display: flex;
+}
+
+.largest-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.largest-number_title {
+  color: black;
+  margin-top: 20px;
+}
+.largest-number_content {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.largest-number_content--input {
+  width: 135px;
+  height: 35px;
+  text-align: center;
+  background-color: #D7D7D7;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.largest-number_content--text {
+  font-size: 12px;
+  line-height: 14.63px;
+  color: black;
+  margin: 36px auto;
 }
 
 .footer {
@@ -702,4 +758,76 @@
 }
 .football__field-ball {
   transform: translateX(200px) translateY(80px);
+}
+
+.our-team {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.our-team__title {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.our-team__carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-team__carousel_indicator {
+  margin-top: 10px;
+  font-size: 16px;
+  display: flex;
+}
+.our-team__carousel_container {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+}
+.our-team__carousel_inner {
+  flex-wrap: nowrap;
+  display: flex;
+}
+.our-team__carousel_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.our-team__carousel_card-img {
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.our-team__carousel_card-title {
+  margin-bottom: 15px;
+}
+.our-team__carousel_card-subtitle {
+  text-align: center;
+}
+.our-team__carousel-btn {
+  width: 50px;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.indicator-dot {
+  width: 15px;
+  height: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: darkgray;
+  transition: background-color 0.3s;
+}
+.indicator-dot.active {
+  width: 25px;
+  background-color: gray;
 }

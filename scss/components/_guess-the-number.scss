@@ -1,0 +1,52 @@
+.guess-the-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:20px;
+
+  &__title {
+    @extend %main-font;
+    color: $mainColor;
+  }
+  &_content {
+    display: grid;
+    width: 576px;
+    margin-top: 36px;
+    align-items: center;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    &__box {
+      display: flex;
+    }
+    &--input {
+      @extend %main-font;
+      width: 125px;
+      border-radius: 20px 0 0 20px;
+      background: $secondColor;
+      font-size: 12px;
+      line-height: 14.63px;
+      border: 0;
+      box-shadow: 3px 3px 0px 0px #00000040;
+      color: #7e7e7e;
+      padding-left: 10px;
+    }
+    &--button {
+      width: 35px;
+      height: 35px;
+      border-radius: 0 20px 20px 0;
+      background-color: $mainColor;
+      border: 0;
+      box-shadow: 3px 3px 0px 0px #00000040;
+    }
+    &--search {
+      width: 15px;
+      height: 15px;
+    }
+    &--result {
+      @extend %main-font;
+      margin-top: 10px;
+  
+    }
+  }
+}
