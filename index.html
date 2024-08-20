@@ -44,6 +44,7 @@
     </div>
   </div>
 </div>
+
 <header>
   <nav>
     <ul class="container-header">
@@ -67,6 +68,7 @@
     </ul>
   </nav>
 </header>
+
   <main class="container">
     <div class="main-content">
       <h1 class="main-title">Популярні інетрактивні ігри</h1>
@@ -208,6 +210,44 @@
             <p id="p-calc-answer" class="calculator__box_answer">Результат</p>
         </div>
       </div>
+<!-- our team -->
+<hr class="dash">
+      <div class="our-team">
+        <h2 class="our-team__title">Наша команда</h2>
+        <div class="our-team__carousel">
+          <button class="our-team__carousel-btn" id="prevBtn"><img src="./images/left.png" alt="left"></button>
+          <div class="our-team__carousel_container">
+            <div class="our-team__carousel_inner">
+              <div class="our-team__carousel_card">
+                <img class="our-team__carousel_card-img" src="./images/sofia.png" alt="Sofia">
+                <h3 class="our-team__carousel_card-title">Софія</h3>
+                <p class="our-team__carousel_card-subtitle">Вона виконувала такі секції як: 
+                  <br>
+                  Хедер + модал вікно, Перевірка року, Футер, Динозавр
+                </p>
+              </div>
+              <div class="our-team__carousel_card">
+                <img class="our-team__carousel_card-img" src="./images/dima.png" alt="Dima">
+                <h3 class="our-team__carousel_card-title">Дмитро</h3>
+                <p class="our-team__carousel_card-subtitle">Він виконував такі секції як:
+                  <br>
+                  Калькулятор, Калькулятор часу, камінь-ножиці-папір, Наша команда
+                </p>
+              </div>
+              <div class="our-team__carousel_card">
+                <img class="our-team__carousel_card-img" src="./images/valeria.png" alt="Valeria">
+                <h3 class="our-team__carousel_card-title">Валерія</h3>
+                <p class="our-team__carousel_card-subtitle">Вона виконувала такі секції як:
+                  <br> 
+                  Вгадай число, 3 числа, Футбол, Обери вченого
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="our-team__carousel-btn" id="nextBtn"><img src="./images/right.png" alt="right"></button>
+        </div>
+        <div class="our-team__carousel_indicator" id="carouselIndicator"></div>
+      </div>
      
 
      <!-- Data calculator -->
@@ -225,6 +265,15 @@
             </div>
         </div>
       </div>
+
+      <!-- Football -->
+       <hr class="dash">
+       <div class="football">
+        <h2 class="football__title">Футбол</h2>
+        <div class="football__field">
+          <img class="football__field-ball" src="./images/ball.png" alt="ball">
+        </div>
+       </div>
 
      <!-- sctVSscVSpa -->
      <hr class="dash">
@@ -267,9 +316,28 @@
     </div>
     <button class="container-scientists__button container-scientists__name">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
   </div>
-  
-
-<script src="script.js"></script>
+  </main>
+  <footer class="footer">
+    <img src="icon\icon-game.png" alt="icon-game" id="icon-color"/>
+    <div>
+      <p><a href="tel:+381234567890" class="game-contact">Тел: +38 (123) 456 78 90</a></p>
+      <p><a href="mailto:codingmagic@gmail.com" class="game-contact">E-Mail: codingmagic@gmail.com</a></p>
+      <p><a href="https://www.facebook.com/CodingMagic" target="_blank" class="game-contact">Facebook: CodingMagic</a>
+      </p>
+      <p><a href="https://twitter.com/CodingMagic" target="_blank" class="game-contact">Twitter: CodingMagic</a></p>
+      <p><a href="https://www.instagram.com/CodingMagic" target="_blank" class="game-contact">Instagram: CodingMagic</a>
+      </p>
+    </div>
+    <div class="footer-subscribe">
+      <input type="text" placeholder="Ваша ел. адреса..." class="footer-subscribe__input" id="footerInput" />
+      <button class="footer-subscribe__button">Підписатись</button>
+      <p class="text-inform">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="google-dinosaur.js"></script>
+  <script src="calculate-year.js"></script>
+  <script src="footer.js"></script>
+  <script src="header-games.js"></script>
 </body>
-
-
+</html>

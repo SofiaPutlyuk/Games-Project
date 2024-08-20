@@ -1,0 +1,26 @@
+.football{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__title{
+        @extend %main-font;
+        font-style: italic;
+        margin-bottom: 15px;
+    }
+
+    &__field{
+        width: 720px;
+        height: 220px;
+        border-radius: 37px;
+        border: 2px solid $mainColor;
+        background-color: $greenColor ;
+       
+        &-ball{
+            transform: translateX(200px) translateY(80px);
+        }
+    }
+}

@@ -1,3 +1,46 @@
+// our team
+const carouselInner = document.querySelector('.our-team__carousel_inner');
+const cards = document.querySelectorAll('.our-team__carousel_card');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const carouselIndicator = document.getElementById('carouselIndicator');
+
+let currentIndex = 0;
+const totalSlides = cards.length;
+
+for (let i = 0; i < totalSlides; i++) {
+  const dot = document.createElement('div');
+  dot.classList.add('indicator-dot');
+  if (i === currentIndex) {
+    dot.classList.add('active');
+  }
+  carouselIndicator.appendChild(dot);
+}
+
+function updateIndicator() {
+  const dots = document.querySelectorAll('.indicator-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentIndex);
+  });
+}
+
+function showCard(index) {
+  carouselInner.style.transform = `translateX(-${index * 100}%)`;
+  updateIndicator();
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex > 0) ? currentIndex - 1 : cards.length - 1;
+  showCard(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex < cards.length - 1) ? currentIndex + 1 : 0;
+  showCard(currentIndex);
+});
+
+showCard(currentIndex);
+
 //Вгадайте число
 const randomNumber = Math.floor(Math.random() * 10) + 1;
 const userGuessInput = document.getElementById("userGuess");
@@ -369,3 +412,15 @@ buttonName.addEventListener('click', () => {
     const results = scientists.filter(scientist => scientist.name[0] === scientist.surname[0]);
     displayResults(results);
 });
+// football
+const ball = document.querySelector('.football__field-ball');
+const field = document.querySelector('.football__field');
+
+field.addEventListener('click', function(event) {
+    const fieldRect = field.getBoundingClientRect();
+    const x = event.clientX - fieldRect.left;
+    const y = event.clientY - fieldRect.top;
+
+    ball.style.transform = `translateX(${x - ball.offsetWidth / 2}px) translateY(${y - ball.offsetHeight / 2}px)`;
+});
+
