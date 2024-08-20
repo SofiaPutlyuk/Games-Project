@@ -1,4 +1,4 @@
-.guess-the-number_content--result, .guess-the-number_content--imput, .guess-the-number_title {
+.guess-the-number_content--result, .guess-the-number_content--input, .guess-the-number__title {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -11,26 +11,26 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 20px;
 }
-.guess-the-number_title {
+.guess-the-number__title {
   color: black;
 }
 .guess-the-number_content {
-  display: flex;
-  width: 100%;
+  display: grid;
+  width: 576px;
   margin-top: 36px;
-  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
 }
-.guess-the-number_content--box {
+.guess-the-number_content__box {
   display: flex;
-  margin-left: 257px;
 }
-.guess-the-number_content--imput {
-  width: 115px;
-  gap: 10px;
+.guess-the-number_content--input {
+  width: 125px;
   border-radius: 20px 0 0 20px;
   background: #D7D7D7;
-  display: flex;
   font-size: 12px;
   line-height: 14.63px;
   border: 0;
@@ -41,7 +41,6 @@
 .guess-the-number_content--button {
   width: 35px;
   height: 35px;
-  gap: 10px;
   border-radius: 0 20px 20px 0;
   background-color: black;
   border: 0;
@@ -53,7 +52,6 @@
 }
 .guess-the-number_content--result {
   margin-top: 10px;
-  margin-right: 240px;
 }
 
 * {

@@ -3,27 +3,27 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  &_title {
+  gap:20px;
+
+  &__title {
     @extend %main-font;
     color: $mainColor;
   }
   &_content {
-    display: flex;
-    width: 100%;
+    display: grid;
+    width: 576px;
     margin-top: 36px;
-    justify-content: space-between;
-    &--box {
+    align-items: center;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    &__box {
       display: flex;
-      margin-left: 257px;
     }
-    &--imput {
-      width: 115px;
-      // height: 35px;
-      gap: 10px;
+    &--input {
+      @extend %main-font;
+      width: 125px;
       border-radius: 20px 0 0 20px;
       background: $secondColor;
-      display: flex;
-      @extend %main-font;
       font-size: 12px;
       line-height: 14.63px;
       border: 0;
@@ -34,7 +34,6 @@
     &--button {
       width: 35px;
       height: 35px;
-      gap: 10px;
       border-radius: 0 20px 20px 0;
       background-color: $mainColor;
       border: 0;
@@ -47,7 +46,7 @@
     &--result {
       @extend %main-font;
       margin-top: 10px;
-      margin-right: 240px;
+  
     }
   }
 }
