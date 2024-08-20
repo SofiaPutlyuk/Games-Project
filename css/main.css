@@ -1,31 +1,35 @@
-.largest-number_content--text, .largest-number_title {
-  font-family: "Montserrat Alternates";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.5px;
-  text-align: center;
+@charset "UTF-8";
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: #F5F5F5;
+  background-image: url("../src/main-games.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.largest-number {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.main-content {
+  width: 1090px;
+  background-color: #fff;
+  margin: auto;
 }
-.largest-number_title {
-  color: black;
+
+.main-title {
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 116px;
 }
-.largest-number_content {
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-  margin-top: 36px;
+
+.dash {
+  margin-top: 20px;
+  width: 536px;
+  border: 1px solid #000000;
 }
-.largest-number_content--input {
-  width: 135px;
-  height: 35px;
-}
-.game-contact, .result-input, .container-check-year__text, .title-dinosaur-google, .sctVSscVSpa__title, .data-calculator__title, .calculator__title {
+
+.game-contact, .largest-number_content--text, .largest-number_title, .result-input, .container-check-year__text, .title-dinosaur-google, .sctVSscVSpa__title, .data-calculator__title, .calculator__title {
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -258,14 +262,6 @@
   margin-right: 25px;
   margin-left: 25px;
 }
-.largest-number_content--text {
-  font-size: 12px;
-  line-height: 14.63px;
-  width: 252px;
-  height: 15px;
-  color: black;
-  margin: 36px auto;
-}
 .calculator__box-arf {
   width: 72px;
   display: flex;
@@ -372,36 +368,6 @@
   width: 100px;
   border: 1px dashed black;
   margin-left: 50px;
-}
-
-.container {
-  width: 100%;
-  margin: auto;
-  background-color: #F5F5F5;
-  background-image: url("../src/main-games.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-content {
-  width: 1090px;
-  background-color: #fff;
-  margin: auto;
-}
-
-.main-title {
-  font-family: "Montserrat Alternates";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-  text-align: center;
-  padding-top: 116px;
-}
-
-.dash {
-  margin-top: 20px;
-  width: 536px;
-  border: 1px solid #000000;
 }
 
 .sctVSscVSpa {
@@ -594,6 +560,40 @@
 
 .input-container {
   display: flex;
+}
+
+.largest-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.largest-number_title {
+  color: black;
+  margin-top: 20px;
+}
+.largest-number_content {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.largest-number_content--input {
+  width: 135px;
+  height: 35px;
+  text-align: center;
+  background-color: #D7D7D7;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.largest-number_content--text {
+  font-size: 12px;
+  line-height: 14.63px;
+  color: black;
+  margin: 36px auto;
 }
 
 .footer {

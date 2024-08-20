@@ -6,12 +6,13 @@
   &_title {
     @extend %main-font;
     color: $mainColor;
+    margin-top: 20px;
   }
   &_content {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-    margin-top: 36px;
+    margin-top: 30px;
     &--input {
       width: 135px;
       height: 35px;
@@ -24,11 +25,9 @@
       margin-left: 25px;
     }
     &--text {
+      @extend %main-font;
       font-size: 12px;
       line-height: 14.63px;
-      width: 252px;
-      height: 15px;
-      @extend %main-font;
       color: $mainColor;
       margin: 36px auto;
     }
