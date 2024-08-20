@@ -1,0 +1,66 @@
+.main-wrapper {
+    display: grid;
+    gap: 20px;
+    width:510px;
+    margin: auto;
+    margin-top: 20px
+  }
+  .title-scientist {
+    @extend %main-font;
+
+  }
+  .wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: $greyColor;
+  }
+  
+  .container-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-scientists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  
+    &__two {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    &__button {
+      @extend %second-font;
+      @extend %button-scientist;
+      border-radius: 20px;
+      border: none;
+      background-color: $mainColor;
+      cursor: pointer;
+    }
+  
+    &__19th { width: 227px; }
+    &__alphabet { width: 282px; }
+    &__age { width: 380px; }
+  
+    &__age-albert-einstein { width: 298px; }
+    &__born-recent { width: 329px; }
+    &__start-c { width: 441px; }
+    &__start-a { width: 375px; }
+    &__lived { width: 368px; height: 50px;}
+    &__name { width: 489px; }
+  }
+  
+  .space {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
