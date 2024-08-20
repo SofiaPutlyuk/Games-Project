@@ -1,0 +1,74 @@
+.container-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1440px;
+    height: 80px;
+
+    &__item {
+        font-family: 'Montserrat Alternates';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+}
+
+#buttonArrow {
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.style-arrow {
+    width: 160px;
+    height: 105px;
+    position: absolute;
+    transform: translate(30px, 10px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+/*Перимекач */
+#button-switch {
+    width: 40px;
+    height: 20px;
+    border: none;
+    background: $darkGrey;
+    border-radius: 11px;
+    transform: translate(60px);
+}
+
+#imgSun {
+    background: $whiteColor;
+    border-radius: 50%;
+    transform: translate(-10px);
+}
+
+/*Блок*/
+.text-div:hover {
+    background: $lightCream;
+
+}
+
+.text-div {
+    height: 35px;
+    align-items: center;
+    display: flex;
+    width: 160px;
+    justify-content: center;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: $mainColor;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+}
+
+.text-div:last-child {
+    border-radius: 0px 0px 20px 20px;
+    border-width: 0px 1px 1px 1px;
+}

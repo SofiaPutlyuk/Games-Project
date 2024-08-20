@@ -1,17 +1,22 @@
+
 body {
     background-image: url('./src/main-games.png');
+}
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: $lightGreyColor;
+    background-image: url('../src/main-games.png');
+
     background-repeat: no-repeat;
-    background-color: $lightGreyColor ;
     background-size: cover;
 
 }
 
-.container {
+.main-content {
     width: 1090px;
-    height: 3202px;
-    background-color: #fff;
+    background-color: $whiteColor;
     margin: auto;
-    margin-top: 80px;
 }
 
 .main-title {
@@ -21,4 +26,9 @@ body {
     line-height: 29px;
     text-align: center;
     padding-top: 116px;
+}
+.dash {
+    margin-top:20px;
+    width: 536px;
+    border: 1px solid #000000;
 }
