@@ -20,7 +20,7 @@
         background-color: $greenColor ;
        
         &-ball{
-
+            transform: translateX(200px) translateY(80px);
         }
     }
 }

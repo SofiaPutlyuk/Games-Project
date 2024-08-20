@@ -167,3 +167,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// football
+const ball = document.querySelector('.football__field-ball');
+const field = document.querySelector('.football__field');
+
+field.addEventListener('click', function(event) {
+    const fieldRect = field.getBoundingClientRect();
+    const x = event.clientX - fieldRect.left;
+    const y = event.clientY - fieldRect.top;
+
+    ball.style.transform = `translateX(${x - ball.offsetWidth / 2}px) translateY(${y - ball.offsetHeight / 2}px)`;
+});

@@ -700,3 +700,6 @@
   border: 2px solid black;
   background-color: #039900;
 }
+.football__field-ball {
+  transform: translateX(200px) translateY(80px);
+}
