@@ -1,0 +1,62 @@
+.input-year {
+    width: 215px;
+    height: 35px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    background: $secondColor;
+    border-radius: 20px;
+    border: none;
+    padding-left: 10px;
+
+}
+
+.container-check-year {
+    display: grid;
+    gap: 25px;
+    width: 578px;
+    margin: auto;
+&__text {
+    @extend %main-font;
+}
+}
+
+.button-year {
+    border: none;
+    background: none;
+
+}
+
+.result-input {
+    @extend %main-font;
+    font-size: 12px;
+    line-height: 15px;
+
+    &__green {
+        color: $greenColor;
+    }
+
+    &__red {
+        color: #990000;
+
+    }
+}
+
+.box-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icon {
+    position: relative;
+    right: 13%;
+    background-image: url('../icon/input-icon-year.png');
+    width: 35px;
+    background-size: cover;
+    height: 35px;
+    border: none;
+    background-color: initial;
+}
+
+.input-container {
+    display: flex;
+}

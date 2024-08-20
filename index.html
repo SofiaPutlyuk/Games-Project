@@ -1,43 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <section class="container guess-the-number">
-      <h2 class="guess-the-number__title">
-        Вгадай число, яке загадав комп’ютер
-      </h2>
-      <div class="guess-the-number_content" id="guess-content">
-       <div class="guess-the-number_content__box">
-        <input
-            type="number"
-            id="userGuess"
-            class="guess-the-number_content--input"
-            placeholder="Введіть число"
-          />
-          <button id="checkButton" class="guess-the-number_content--button">
-            <img
-              class="guess-the-number_content--search"
-              src="src/search.png"
-              alt="search"
-            />
-          </button>
-        </div>
-        <p id="resultMessage" class="guess-the-number_content--result"></p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+
+  <!--Montserrat Alternates-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+<div class="backdrop">
+  <div class="modal-content">
+    <button id="buttonClose">
+      <img src="src/button-close.png" alt="button-close" />
+    </button>
+    <div class="space-container">
+      <p class="text-modal">
+        Привіт! Ви потрапили на сайт інтерактивних ігор та завдань
+        Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+        Бажаємо Вам гарно провести час!
+      </p>
+      <div class="container-img">
+        <img src="src/sword-puzzle.png" alt="sword-puzzle" />
+        <form class="form-name">
+          <div class="form-group">
+            <label for="inputName" class="text-label">Введіть своє ім’я:</label>
+            <input type="text" placeholder="Ваше ім’я..." id="inputName" />
+          </div>
+          <button type="button" id="buttonSave">Зберегти</button>
+        </form>
+        <img src="src/game-console.png" alt="game-console" />
       </div>
-    </section>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </div>
+</div>
+<header>
+  <nav>
+    <ul class="container-header">
+      <li class="container-header__item">
+        <img src="src/icon-header.png" alt="icon-header" id="icon-color" />
+      </li>
+      <li class="container-header__item">
+        Інтерактив
+        <button id="buttonArrow">
+          <img src="src/header-arrow.png" alt="header-arrow" />
+        </button>
+      </li>
+      <li class="container-header__item">Наша команда</li>
+      <li class="container-header__item">Контакти</li>
+      <li>
+        <button id="button-switch">
+          <img src="src/button-sun.png" alt="sun-icon" id="imgSun" />
+        </button>
+      </li>
+      <li class="container-header__item">Вітаємо, User!</li>
+    </ul>
+  </nav>
+</header>
+  <main class="container">
+    <div class="main-content">
+      <h1 class="main-title">Популярні інетрактивні ігри</h1>
+      <div class="container-check-year">
+        <hr class="dash">
+        <p class="container-check-year__text">Перевір в який рік ти народився</p>
+        <form class="box-input">
+          <div class="input-container">
+            <input type="text" placeholder="Введіть рік народження" class="input-year" id="yearInput" />
+            <button type="button" id="icon">
+            </button>
+          </div>
+        </form>
+      </div>
+      <!--Guess the number-->
+      <hr class="dash"/>
+      <section class="guess-the-number">
+        <h2 class="guess-the-number__title">
+          Вгадай число, яке загадав комп’ютер
+        </h2>
+        <div class="guess-the-number_content" id="guess-content">
+         <div class="guess-the-number_content__box">
+          <input
+              type="number"
+              id="userGuess"
+              class="guess-the-number_content--input"
+              placeholder="Введіть число"
+            />
+            <button id="checkButton" class="guess-the-number_content--button">
+              <img
+                class="guess-the-number_content--search"
+                src="src/search.png"
+                alt="search"
+              />
+            </button>
+          </div>
+          <p id="resultMessage" class="guess-the-number_content--result"></p>
+        </div>
+      </section>
+      <hr class="dash"/>
+      <p class="title-dinosaur-google">Google динозавр</p>
+      <div class="container-google-dinosaur">
+        <div id="dinosaur"></div>
+        <div id="road">
+          <div id="obstacle">
+          </div>
+        </div>
+      </div>
+     
+
+     <!-- calculator -->
+     <hr class="dash">
+     <div class="calculator">
+        <hr>
+        <h2 class="calculator__title">Калькулятор</h2>
+        <div class="calculator__box">
+            <input id="input-calc-numb1" type="number" class="calculator__box-input" placeholder="Введіть число">
+                <div class="calculator__box-arf">
+                    <div class="calculator__box-arfbox">
+                        <button id="bth-calc-plus" class="calculator__box-arfbox-bth">+</button>
+                        <button id="bth-calc-multiply" class="calculator__box-arfbox-bth">*</button>
+                    </div>
+                    <div class="calculator__box_arfbox">
+                        <button id="bth-calc-minus" class="calculator__box-arfbox-bth">-</button>
+                        <button id="bth-calc-divide" class="calculator__box-arfbox-bth">/</button>
+                    </div>
+                </div>
+            <input id="input-calc-numb2" type="number" class="calculator__box-input" placeholder="Введіть число">
+                <div class="calculator__box-arf">
+                    <button id="bth-calc-answer" class="calculator__box-arfbox-bth">=</button>
+                </div>
+            <p id="p-calc-answer" class="calculator__box_answer">Результат</p>
+        </div>
+      </div>
+     
+
+     <!-- Data calculator -->
+    <hr class="dash">
+     <div class="data-calculator">
+        <h2 class="data-calculator__title">Калькулятор часу</h2>
+        <div class="data-calculator__box">
+            <div class="data-calculator__item">
+                <input id="data-calc-input" name="data-calc-input-name" class="data-calculator__item-input" type="number" placeholder="Введіть число">
+                <button id="data-calc-button" for="data-calc-input-name" class="data-calculator__item-bth"><img src="./icon/dandruff.png" alt=""></button>
+            </div>
+            <div class="data-calculator__itemanswer">
+                <hr class="data-calculator__itemanswer-answerpe">
+                <p id="data-calc-answer" class="data-calculator__itemanswer-answer">.......</p>
+            </div>
+        </div>
+      </div>
+
+     <!-- sctVSscVSpa -->
+     <hr class="dash">
+     <div class="sctVSscVSpa">
+        <h2 class="sctVSscVSpa__title">Камінь - ножиці - папір</h2>
+        <div class="sctVSscVSpa__box">
+            <div class="sctVSscVSpa__box_btn">
+                <button id="stone" class="sctVSscVSpa__box_btn--vs"><img src="./images/stone.png" alt="stone"></button>
+                <button id="scissors" class="sctVSscVSpa__box_btn--vs"><img src="./images/scissors.png" alt="scissors"></button>
+                <button id="paper" class="sctVSscVSpa__box_btn--vs"><img src="./images/paper.png" alt="paper"></button>
+            </div>
+            <div class="sctVSscVSpa__box_scoreboard">
+                <p class="sctVSscVSpa__box_scoreboard--txt">Рахунок:</p>
+                <p id="compScore" class="sctVSscVSpa__box_scoreboard--txt sctVSscVSpa__box_scoreboard--txt-score">Комп’ютер - </p>
+                <p id="userScore" class="sctVSscVSpa__box_scoreboard--txt sctVSscVSpa__box_scoreboard--txt-score">Ви - </p>
+            </div>
+        </div>
+        <p id="whoWonThere" class="sctVSscVSpa__answer">Хто виграв раунд?</p>
+        <button id="play" class="sctVSscVSpa__btn">Варіант комп’ютера</button>
+      </div>
+      
+    </div>
+  </main>
+  <footer class="footer">
+    <img src="icon\icon-game.png" alt="icon-game" id="icon-color"/>
+    <div>
+      <p><a href="tel:+381234567890" class="game-contact">Тел: +38 (123) 456 78 90</a></p>
+      <p><a href="mailto:codingmagic@gmail.com" class="game-contact">E-Mail: codingmagic@gmail.com</a></p>
+      <p><a href="https://www.facebook.com/CodingMagic" target="_blank" class="game-contact">Facebook: CodingMagic</a>
+      </p>
+      <p><a href="https://twitter.com/CodingMagic" target="_blank" class="game-contact">Twitter: CodingMagic</a></p>
+      <p><a href="https://www.instagram.com/CodingMagic" target="_blank" class="game-contact">Instagram: CodingMagic</a>
+      </p>
+    </div>
+    <div class="footer-subscribe">
+      <input type="text" placeholder="Ваша ел. адреса..." class="footer-subscribe__input" id="footerInput" />
+      <button class="footer-subscribe__button">Підписатись</button>
+      <p class="text-inform">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="google-dinosaur.js"></script>
+  <script src="calculate-year.js"></script>
+  <script src="footer.js"></script>
+  <script src="header-games.js"></script>
+</body>
 </html>
+
