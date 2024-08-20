@@ -84,82 +84,87 @@ const scientists = [
         id: 12
     }
 ];
+
 const button19th = document.querySelector('.container-scientists__19th');
-const allWrappers = document.querySelectorAll('.wrapper');
-console.log(allWrappers)
-const a = allWrappers.forEach(element => {
-const createText = document.createElement
-    
- })
-
-
-
-
 const buttonAlphabet = document.querySelector('.container-scientists__alphabet');
-console.log(buttonAlphabet);
-
 const buttonAge = document.querySelector('.container-scientists__age');
-console.log(buttonAge);
-
 const buttonBornRecent = document.querySelector('.container-scientists__born-recent');
-console.log(buttonBornRecent);
-
 const buttonAgeAlbertEinstein = document.querySelector('.container-scientists__age-albert-einstein');
-console.log(buttonAgeAlbertEinstein);
-
 const buttonStartC = document.querySelector('.container-scientists__start-c');
-console.log(buttonStartC);
-
 const buttonStartA = document.querySelector('.container-scientists__start-a');
-console.log(buttonStartA);
-
 const buttonLived = document.querySelector('.container-scientists__lived');
-console.log(buttonLived);
-
 const buttonName = document.querySelector('.container-scientists__name');
-console.log(buttonName);
 
+const wrappers = document.querySelectorAll('.wrapper');
 
-/*Вчені народженні 19ст */
-const searchBornNineteens = (scientists) => {
-    return scientists.filter(scientist => {
-        const birthYear = scientist.born;
-        return birthYear >= 1801 && birthYear <= 1900;
+function clearWrappers() {
+    wrappers.forEach(wrapper => wrapper.innerHTML = '');
+}
+
+function displayResults(results) {
+    clearWrappers();
+    results.forEach((result, index) => {
+        if (wrappers[index]) {
+            const div = document.createElement('div');
+            div.className = 'result-box';
+            div.classList.add('text')
+            div.innerHTML = `
+                <h3>${result.name} ${result.surname}</h3>
+                <p>Born: ${result.born}</p>
+                <p>Dead: ${result.dead}</p>
+                <p>Lived: ${result.dead - result.born} years</p>
+            `;
+
+            wrappers[index].appendChild(div);
+        }
     });
-};
+}
 
-const searchYear19th = searchBornNineteens(scientists);
-console.log(searchYear19th);
-//Сортування за алфавітом
-const searchName = scientists.sort((a, b) => a.name.localeCompare(b.name))
-console.log(searchName)
-searchName.forEach(element => {
-    console.log(element.name)
-})
-//Знайти суму років, скільки прожили всі вчені
-const totalYearsLived = scientists.reduce((total, scientist) => total + (scientist.dead - scientist.born), 0);
-console.log(totalYearsLived)
-// Знайти вченого, який народився найпізніше
-const latestBorn = [...scientists].sort((a, b) => b.born - a.born)[0];
-console.log(latestBorn);
-// Знайти рік народження Albert Einstein
-const albertEinstein = scientists.find(scientist => scientist.name === "Albert" && scientist.surname === "Einstein");
-//Знайти вчених, прізвища яких починаються на літеру “С”
-const surnamesStartingWithC = scientists.filter(scientist => scientist.surname.startsWith('C'));
-//Видалити всіх вчених, ім’я яких починається на “А”
-const withoutNameStartingWithA = scientists.filter(scientist => !scientist.name.startsWith('A'));
-//Знайти вченого, який прожив найдовше і вченого, який прожив найменше
-const minMaxLived = scientists.reduce((acc, scientist) => {
-    const yearsLived = scientist.dead - scientist.born;
-    if (yearsLived > acc.max.years) {
-      acc.max = { scientist, years: yearsLived };
-    }
-    if (yearsLived < acc.min.years) {
-      acc.min = { scientist, years: yearsLived };
-    }
-  
-    return acc;
-  }, { min: { scientist: null, years: Infinity }, max: { scientist: null, years: -Infinity } });
-  console.log(minMaxLived)
-//Знайти вчених, в яких співпадають перші літери імені і прізвища
-const matchingInitials = scientists.filter(scientist => scientist.name[0] === scientist.surname[0]);
+button19th.addEventListener('click', () => {
+    const results = scientists.filter(scientist => scientist.born >= 1801 && scientist.born <= 1900);
+    displayResults(results);
+});
+
+buttonAlphabet.addEventListener('click', () => {
+    const results = [...scientists].sort((a, b) => a.name.localeCompare(b.name));
+    displayResults(results);
+});
+
+buttonAge.addEventListener('click', () => {
+    const results = [...scientists].sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
+    displayResults(results);
+});
+
+buttonBornRecent.addEventListener('click', () => {
+    const result = [...scientists].sort((a, b) => b.born - a.born)[0];
+    displayResults([result]);
+});
+
+buttonAgeAlbertEinstein.addEventListener('click', () => {
+    const result = scientists.find(scientist => scientist.name === 'Albert' && scientist.surname === 'Einstein');
+    displayResults([result]);
+});
+
+buttonStartC.addEventListener('click', () => {
+    const results = scientists.filter(scientist => scientist.surname.startsWith('C'));
+    displayResults(results);
+});
+
+buttonStartA.addEventListener('click', () => {
+    const results = scientists.filter(scientist => !scientist.name.startsWith('A'));
+    displayResults(results);
+});
+
+buttonLived.addEventListener('click', () => {
+    const sorted = [...scientists].sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
+    const result = [
+        sorted[0], 
+        sorted[sorted.length - 1] 
+    ];
+    displayResults(result);
+});
+
+buttonName.addEventListener('click', () => {
+    const results = scientists.filter(scientist => scientist.name[0] === scientist.surname[0]);
+    displayResults(results);
+});
