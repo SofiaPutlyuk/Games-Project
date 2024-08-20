@@ -1,12 +1,10 @@
+//Вгадайте число
 const randomNumber = Math.floor(Math.random() * 10) + 1;
-
 const userGuessInput = document.getElementById("userGuess");
 const checkButton = document.getElementById("checkButton");
 const resultMessage = document.getElementById("resultMessage");
-
 checkButton.addEventListener("click", () => {
   const userGuess = Number(userGuessInput.value);
-
   if (userGuess === randomNumber) {
     resultMessage.textContent = `Вітаю, ви вгадали число! (${randomNumber})`;
     resultMessage.style.color = "#039900";
@@ -15,6 +13,23 @@ checkButton.addEventListener("click", () => {
     resultMessage.style.color = "red";
   }
 });
+//Введіть 3 числа
+const number1Input = document.getElementById("number1");
+const number2Input = document.getElementById("number2");
+const number3Input = document.getElementById("number3");
+const resultMessageNumber = document.getElementById("resultMessageNumber");
+
+function updateLargestNumber() {
+  const num1 = Number(number1Input.value);
+  const num2 = Number(number2Input.value);
+  const num3 = Number(number3Input.value);
+  const largestNumber = Math.max(num1, num2, num3);
+  resultMessageNumber.textContent = `Найбільше число, яке ви ввели -  ${largestNumber}`;
+}
+
+number1Input.addEventListener("input", updateLargestNumber);
+number2Input.addEventListener("input", updateLargestNumber);
+number3Input.addEventListener("input", updateLargestNumber);
 // calculator
 
 const inputCalcNumb1 = document.querySelector("#input-calc-numb1");

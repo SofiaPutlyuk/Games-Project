@@ -1,0 +1,35 @@
+.largest-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &_title {
+    @extend %main-font;
+    color: $mainColor;
+    margin-top: 20px;
+  }
+  &_content {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 30px;
+    &--input {
+      width: 135px;
+      height: 35px;
+      text-align: center;
+      background-color: $secondColor;
+      border-radius: 20px;
+      border: 0;
+      box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+    &--text {
+      @extend %main-font;
+      font-size: 12px;
+      line-height: 14.63px;
+      color: $mainColor;
+      margin: 36px auto;
+    }
+  }
+}
